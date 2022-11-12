@@ -179,7 +179,7 @@ abstract class AJAX_LoadMore
     /**
      * Generates the output.
      *
-     * @since 1.1.0
+     * @since 1.0.0
      */
 
     static function prepare_output( $params, $ajax )
