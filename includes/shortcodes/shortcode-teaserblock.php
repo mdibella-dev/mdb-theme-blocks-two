@@ -3,7 +3,7 @@
  * The shortcode [teaserblock].
  *
  * @author  Marco Di Bella
- * @package mdb-theme-ajax
+ * @package mdb-theme-blocks-2
  */
 
 namespace mdb_theme_ajax;
