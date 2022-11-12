@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Marco Di Bella - Blocks\n"
-"POT-Creation-Date: 2022-10-03 16:31+0200\n"
-"PO-Revision-Date: 2022-10-03 16:32+0200\n"
+"POT-Creation-Date: 2022-11-12 18:41+0100\n"
+"PO-Revision-Date: 2022-11-12 18:43+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: plugin.php\n"
@@ -45,10 +45,6 @@ msgstr "Weitere Beiträge mit dem Schlagwort %1$s"
 #: includes/blocks/related-posts/block.js:8
 msgid "Shows the related posts."
 msgstr "Zeigt verwandte Beiträge an."
-
-#: includes/blocks/related-posts/block.php:71
-msgid "Also interesting"
-msgstr "Auch interessant"
 
 #: includes/blocks/single-publication-details/block.js:8
 msgid "Shows the details of a single publication."
@@ -86,22 +82,40 @@ msgstr "Zitiervorschlag"
 msgid "Generate RIS file"
 msgstr "RIS-Datei erstellen"
 
+#: includes/classes/class-ajax-loadmore-publikationsliste.php:105
+msgid "Show details"
+msgstr "Zeige Details"
+
+#: includes/classes/class-ajax-loadmore-publikationsliste.php:106
+msgid "Details"
+msgstr "Details"
+
+#: includes/classes/class-ajax-loadmore-teaserblock.php:100
+msgid "More"
+msgstr "Mehr"
+
+#: includes/classes/class-ajax-loadmore.php:230
+msgid "Show more"
+msgstr "Zeige mehr"
+
 #. Plugin Name of the plugin/theme
-msgid "Marco Di Bella - Blocks"
-msgstr "Marco Di Bella - Blocks"
+msgid "Marco Di Bella - Blocks 2"
+msgstr "Marco Di Bella - Blocks 2"
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/mdibella-dev/mdb-theme-blocks"
-msgstr "https://github.com/mdibella-dev/mdb-theme-blocks"
+msgid "https://github.com/mdibella-dev/mdb-theme-blocks-two"
+msgstr "https://github.com/mdibella-dev/mdb-theme-blocks-two"
 
 #. Description of the plugin/theme
 msgid ""
 "This plugin adds custom blocks to the Gutenberg editor for use in Marco Di "
-"Bella's personal WordPress theme (mdb-theme-fse)."
+"Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement of "
+"mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0)."
 msgstr ""
 "Dieses Plugin fügt dem Gutenberg-Editor benutzerdefinierte Blöcke zur "
 "Verwendung in Marco Di Bellas persönlichem WordPress-Theme (mdb-theme-fse) "
-"hinzu."
+"hinzu. Im Grunde ein Ersatz für mdb-theme-blocks (1.2.0) und mdb-theme-ajax "
+"(1.1.0)."
 
 #. Author of the plugin/theme
 msgid "Marco Di Bella"
@@ -110,6 +124,9 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#~ msgid "Also interesting"
+#~ msgstr "Auch interessant"
 
 #, php-format
 #~ msgid "Term: %1$s"
