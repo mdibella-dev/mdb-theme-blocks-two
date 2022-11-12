@@ -31,6 +31,15 @@ $plugin_path    = plugin_dir_path( __FILE__ );
 
 /** Include files */
 
+require_once( $plugin_path . '/includes/classes/class-ajax-loadmore.php' );
+require_once( $plugin_path . '/includes/classes/class-ajax-loadmore-teaserblock.php' );
+require_once( $plugin_path . '/includes/classes/class-ajax-loadmore-vortragsliste.php' );
+require_once( $plugin_path . '/includes/classes/class-ajax-loadmore-publikationsliste.php' );
+
+require_once( $plugin_path . '/includes/shortcodes/shortcode-publikationsliste.php' );
+require_once( $plugin_path . '/includes/shortcodes/shortcode-vortragsliste.php' );
+require_once( $plugin_path . '/includes/shortcodes/shortcode-teaserblock.php' );
+
 require_once( $plugin_path . 'includes/setup.php' );
 require_once( $plugin_path . 'includes/block-categories.php' );
 
