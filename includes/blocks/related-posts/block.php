@@ -3,7 +3,7 @@
  * Block: related_posts
  *
  * @author  Marco Di Bella
- * @package mdb-theme-blocks-2
+ * @package mdb-theme-blocks
  */
 
 namespace mdb_theme_blocks;
