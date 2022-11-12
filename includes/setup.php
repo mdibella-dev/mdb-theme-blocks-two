@@ -59,3 +59,30 @@ function plugin_init()
 }
 
 add_action( 'init', 'mdb_theme_blocks\plugin_init' );
+
+
+
+/**
+ * Load the frontend scripts and styles.
+ *
+ * @since 1.0.0
+ */
+
+function enqueue_scripts()
+{
+    wp_enqueue_script(
+        'ajax',
+        plugins_url( 'assets/build/js/ajax-loadmore.min.js', dirname( __FILE__ ) ),
+        'jquery',
+        false,
+        true
+    );
+
+    wp_localize_script(
+        'ajax',
+        'mdb_ajax',
+        array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) )
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'mdb_theme_blocks\enqueue_scripts', 9999 );
