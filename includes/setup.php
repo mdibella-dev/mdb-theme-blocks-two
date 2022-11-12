@@ -55,7 +55,7 @@ function plugin_init()
 {
     // Load text domain
     // The in the Codex described method to determine the path of the languages folder fails because we are in a subfolfer (/includes).
-    load_plugin_textdomain( 'mdb-theme-blocks', false, '/mdb-theme-blocks/languages' );
+    load_plugin_textdomain( 'mdb-theme-blocks', false, '/mdb-theme-blocks-2/languages' );
 }
 
 add_action( 'init', 'mdb_theme_blocks\plugin_init' );
