@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "mdb-theme-blocks/download-container",
+    "title": "Download-Container",
+    "description": "Ein Container-Element zur Bereitstellung von Downloads.",
+    "category": "mdb-theme-blocks",
+    "icon": "download",
+    "textdomain": "mdb-theme-blocks",
+    "example": {},
+    "attributes": {
+        "className": "download-container"
+    },
+    "editorScript": "file:./block.js"
+}

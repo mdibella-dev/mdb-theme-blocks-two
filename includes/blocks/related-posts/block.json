@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "mdb-theme-blocks/related-posts",
+    "title": "Related posts",
+    "description": "Shows the related posts.",
+    "category": "mdb-theme-blocks",
+    "icon": "media-default",
+    "textdomain": "mdb-theme-blocks",
+    "usesContext": [ "postType", "postId", "queryId" ],
+    "example": {},
+    "attributes" : {},
+    "editorScript": "file:./block.js"
+}

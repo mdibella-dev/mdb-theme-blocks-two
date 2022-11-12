@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "mdb-theme-blocks/post-terms-archive",
+    "title": "Schlagwort-Archiv",
+    "description": "Overview of the articles provided with a certain term.",
+    "category": "mdb-theme-blocks",
+    "icon": "tag",
+    "textdomain": "mdb-theme-blocks",
+    "usesContext": [ "postType", "postId", "queryId" ],
+    "example": {},
+    "attributes" : {},
+    "editorScript": "file:./block.js"
+}

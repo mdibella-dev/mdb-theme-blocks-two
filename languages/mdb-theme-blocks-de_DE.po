@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Marco Di Bella - Blocks\n"
+"POT-Creation-Date: 2022-10-03 16:31+0200\n"
+"PO-Revision-Date: 2022-10-03 16:32+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/block-categories.php:33
+msgid "Marco Di Bella's theme blocks"
+msgstr "Blöcke für Marco Di Bellas Theme"
+
+#: includes/blocks/post-terms-archive/block.js:8
+msgid "Overview of the articles provided with a certain term."
+msgstr "Übersicht der mit einem bestimmten Schlagwort versehenen Artikel."
+
+#: includes/blocks/post-terms-archive/block.php:37
+msgid "Term"
+msgstr "Schlagwort"
+
+#: includes/blocks/post-terms/block.js:8
+msgid "Shows the post terms as a button list."
+msgstr "Zeigt die Schlagworte eines Beitrags in Form einer Schaltflächenliste."
+
+#: includes/blocks/post-terms/block.php:51
+#, php-format
+msgid "More posts with the term %1$s"
+msgstr "Weitere Beiträge mit dem Schlagwort %1$s"
+
+#: includes/blocks/related-posts/block.js:8
+msgid "Shows the related posts."
+msgstr "Zeigt verwandte Beiträge an."
+
+#: includes/blocks/related-posts/block.php:71
+msgid "Also interesting"
+msgstr "Auch interessant"
+
+#: includes/blocks/single-publication-details/block.js:8
+msgid "Shows the details of a single publication."
+msgstr "Zeigt die Details einer einzelnen Publikation."
+
+#: includes/blocks/single-publication-details/block.php:84
+msgid "Authors"
+msgstr "Autoren"
+
+#: includes/blocks/single-publication-details/block.php:84
+msgid "Author"
+msgstr "Autor"
+
+#: includes/blocks/single-publication-details/block.php:96
+msgid "Abstract"
+msgstr "Abstrakt"
+
+#: includes/blocks/single-publication-details/block.php:107
+msgid "Citation"
+msgstr "Referenzen"
+
+#: includes/blocks/single-publication-details/block.php:124
+msgid "Is citated in"
+msgstr "Wird zitiert in"
+
+#: includes/blocks/single-publication-details/block.php:141
+msgid "Keywords"
+msgstr "Schlagwörter"
+
+#: includes/blocks/single-publication-details/block.php:153
+msgid "citation suggestion"
+msgstr "Zitiervorschlag"
+
+#: includes/blocks/single-publication-details/block.php:157
+msgid "Generate RIS file"
+msgstr "RIS-Datei erstellen"
+
+#. Plugin Name of the plugin/theme
+msgid "Marco Di Bella - Blocks"
+msgstr "Marco Di Bella - Blocks"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/mdibella-dev/mdb-theme-blocks"
+msgstr "https://github.com/mdibella-dev/mdb-theme-blocks"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin adds custom blocks to the Gutenberg editor for use in Marco Di "
+"Bella's personal WordPress theme (mdb-theme-fse)."
+msgstr ""
+"Dieses Plugin fügt dem Gutenberg-Editor benutzerdefinierte Blöcke zur "
+"Verwendung in Marco Di Bellas persönlichem WordPress-Theme (mdb-theme-fse) "
+"hinzu."
+
+#. Author of the plugin/theme
+msgid "Marco Di Bella"
+msgstr "Marco Di Bella"
+
+#. Author URI of the plugin/theme
+msgid "https://www.marcodibella.de"
+msgstr "https://www.marcodibella.de"
+
+#, php-format
+#~ msgid "Term: %1$s"
+#~ msgstr "Schlagwort: %1$s"

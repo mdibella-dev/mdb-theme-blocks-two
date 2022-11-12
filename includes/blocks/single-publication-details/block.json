@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "mdb-theme-blocks/single-publication-details",
+    "title": "Publikationsdetails",
+    "description": "Shows the details of a single publication.",
+    "category": "mdb-theme-blocks",
+    "icon": "media-document",
+    "textdomain": "mdb-theme-blocks",
+    "usesContext": [ "postType", "postId", "queryId" ],
+    "example": {},
+    "attributes" : {},
+    "editorScript": "file:./block.js"
+}

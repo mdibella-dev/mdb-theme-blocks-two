@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "mdb-theme-blocks/post-terms",
+    "title": "Beitrags-Schlagwörter",
+    "description": "Erzeugt eine Schaltflächen-Navigation mit den Beitrags-Schlagwörtern.",
+    "category": "mdb-theme-blocks",
+    "icon": "tag",
+    "textdomain": "mdb-theme-blocks",
+    "example": {},
+    "attributes" : {},
+    "editorScript": "file:./block.js"
+}
