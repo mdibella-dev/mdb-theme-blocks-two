@@ -10,7 +10,7 @@
  * Domain Path:     /languages
  *
  * @author  Marco Di Bella
- * @package mdb-theme-blocks
+ * @package mdb-theme-blocks-two
  */
 
 namespace mdb_theme_blocks;

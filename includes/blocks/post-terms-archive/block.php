@@ -3,7 +3,7 @@
  * Block: post-terms-archive
  *
  * @author  Marco Di Bella
- * @package mdb-theme-blocks
+ * @package mdb-theme-blocks-two
  */
 
 namespace mdb_theme_blocks_two;
