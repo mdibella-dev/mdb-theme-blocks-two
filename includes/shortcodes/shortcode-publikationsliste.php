@@ -79,4 +79,4 @@ function shortcode_publikationsliste( $atts, $content = null )
     return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
-add_shortcode( 'publikationsliste', 'mdb_theme_ajax\shortcode_publikationsliste' );
+add_shortcode( 'publikationsliste', 'mdb_theme_blocks\shortcode_publikationsliste' );
