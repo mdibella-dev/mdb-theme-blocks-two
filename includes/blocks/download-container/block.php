@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks;
+namespace mdb_theme_blocks_two;
 
 
 /** Prevent direct access */
@@ -22,6 +22,6 @@ if ( function_exists( 'register_block_type' ) ) :
         register_block_type( __DIR__ );
     }
 
-    add_action( 'init', 'mdb_theme_blocks\register_block' );
+    add_action( 'init', 'mdb_theme_blocks_two\register_block' );
 
 endif;

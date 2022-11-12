@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks;
+namespace mdb_theme_blocks_two;
 
 
 /** Prevent direct access */
@@ -26,7 +26,7 @@ function plugin_activation()
     // Do something!
 }
 
-register_activation_hook( __FILE__, 'mdb_theme_blocks\plugin_activation' );
+register_activation_hook( __FILE__, 'mdb_theme_blocks_two\plugin_activation' );
 
 
 
@@ -41,7 +41,7 @@ function plugin_deactivation()
     // Do something!
 }
 
-register_deactivation_hook( __FILE__, 'mdb_theme_blocks\plugin_deactivation' );
+register_deactivation_hook( __FILE__, 'mdb_theme_blocks_two\plugin_deactivation' );
 
 
 
@@ -58,7 +58,7 @@ function plugin_init()
     load_plugin_textdomain( 'mdb-theme-blocks', false, '/mdb-theme-blocks-2/languages' );
 }
 
-add_action( 'init', 'mdb_theme_blocks\plugin_init' );
+add_action( 'init', 'mdb_theme_blocks_two\plugin_init' );
 
 
 
@@ -85,4 +85,4 @@ function enqueue_scripts()
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'mdb_theme_blocks\enqueue_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', 'mdb_theme_blocks_two\enqueue_scripts', 9999 );

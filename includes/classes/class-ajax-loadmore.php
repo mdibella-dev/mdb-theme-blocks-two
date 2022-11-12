@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks;
+namespace mdb_theme_blocks_two;
 
 
 /** Prevent direct access */

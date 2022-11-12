@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks;
+namespace mdb_theme_blocks_two;
 
 
 /** Prevent direct access */
@@ -138,8 +138,8 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
 
 }
 
-add_action( 'wp_ajax_publikationsliste', array( 'mdb_theme_blocks\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
-add_action( 'wp_ajax_nopriv_publikationsliste', array( 'mdb_theme_blocks\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
+add_action( 'wp_ajax_publikationsliste', array( 'mdb_theme_blocks_two\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
+add_action( 'wp_ajax_nopriv_publikationsliste', array( 'mdb_theme_blocks_two\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
 
 
 AJAX_LoadMore_Publikationsliste::__constructStatic();
