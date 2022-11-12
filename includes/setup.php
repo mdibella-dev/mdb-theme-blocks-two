@@ -74,7 +74,7 @@ function enqueue_scripts()
         'ajax',
         plugins_url( 'assets/build/js/ajax-loadmore.min.js', dirname( __FILE__ ) ),
         'jquery',
-        false,
+        $plugin_version,
         true
     );
 
