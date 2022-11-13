@@ -7,6 +7,10 @@
  */
 
 namespace mdb_theme_blocks_two;
+use function \mdb_theme_core\publication__is_publication as api_is_publication;
+use function \mdb_theme_core\publication__build_citation as api_build_citation;
+use function \mdb_theme_core\publication__get_data as api_get_data;
+
 
 
 /** Prevent direct access */
@@ -27,11 +31,11 @@ defined( 'ABSPATH' ) or exit;
 
 function render_block_single_publication_details( $attributes, $content, $block )
 {
-    if( ! isset( $block->context['postId'] ) ) :
+    if( ! isset( $block->context['postId'] ) or ! api_is_publication( $block->context['postId'] ) ) :
         return '';
     endif;
 
-    $data = \mdb_theme_core\publication__get_data( $block->context['postId'] ); // add a fail safe here?
+    $data = api_get_data( $block->context['postId'] );
 
 
     // Start rendering
@@ -151,7 +155,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
 
 <section class="publication-section">
     <h2><?php echo __( 'citation suggestion', 'mdb-theme-blocks'); ?></h2>
-    <p><?php echo \mdb_theme_core\publication__build_citation( $block->context['postId'] ); ?></p>
+    <p><?php echo api_build_citation( $block->context['postId'] ); ?></p>
     <div class="wp-block-buttons is-content-justification-center" style="display: flex; padding-top: 4rem;" >
         <div class="wp-block-button" data-parentid="<?php echo $params['id']; ?>">
             <a class="wp-block-button__link" href="/citation/<?php echo $block->context['postId']; ?>" rel="nofollow"><?php echo __( 'Generate RIS file', 'mdb-theme-blocks'); ?></a>
