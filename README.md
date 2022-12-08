@@ -10,11 +10,12 @@ __Requires at least:__ WordPress 6.0
 __Tested up to:__ WordPress 6.1
 
 ## Changelog
-*New/Enhance/Bugfix*
+*New/Improve/Bugfix*
 
 ### main
-* Enhance: Change section generation in single-publication-details.
-* Enhance: Add separator block in single-publication-details.
+* Improve: Change section generation in single-publication-details.
+* Improve: Add separator block in single-publication-details.
+* Bugfix: Wrong textdomain.
 
 
 

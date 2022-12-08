@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Marco Di Bella - Blocks\n"
-"POT-Creation-Date: 2022-11-12 18:41+0100\n"
-"PO-Revision-Date: 2022-11-12 18:43+0100\n"
+"Project-Id-Version: Marco Di Bella - Blocks 2\n"
+"POT-Creation-Date: 2022-12-08 12:09+0100\n"
+"PO-Revision-Date: 2022-12-08 12:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: plugin.php\n"
@@ -27,7 +27,7 @@ msgstr "Blöcke für Marco Di Bellas Theme"
 
 #: includes/blocks/post-terms-archive/block.js:8
 msgid "Overview of the articles provided with a certain term."
-msgstr "Übersicht der mit einem bestimmten Schlagwort versehenen Artikel."
+msgstr "Übersicht von Artikeln, die über ein bestimmtes Schlagwort verfügen."
 
 #: includes/blocks/post-terms-archive/block.php:37
 msgid "Term"
@@ -44,59 +44,51 @@ msgstr "Weitere Beiträge mit dem Schlagwort %1$s"
 
 #: includes/blocks/related-posts/block.js:8
 msgid "Shows the related posts."
-msgstr "Zeigt verwandte Beiträge an."
+msgstr "Zeigt ähnliche Beiträge an."
 
 #: includes/blocks/single-publication-details/block.js:8
 msgid "Shows the details of a single publication."
-msgstr "Zeigt die Details einer einzelnen Publikation."
+msgstr "Zeigt die Details einer bestimmten Publikation an."
 
-#: includes/blocks/single-publication-details/block.php:84
+#: includes/blocks/single-publication-details/block.php:102
 msgid "Authors"
 msgstr "Autoren"
 
-#: includes/blocks/single-publication-details/block.php:84
+#: includes/blocks/single-publication-details/block.php:102
 msgid "Author"
 msgstr "Autor"
 
-#: includes/blocks/single-publication-details/block.php:96
+#: includes/blocks/single-publication-details/block.php:121
 msgid "Abstract"
-msgstr "Abstrakt"
+msgstr "Auszug"
 
-#: includes/blocks/single-publication-details/block.php:107
+#: includes/blocks/single-publication-details/block.php:140
 msgid "Citation"
-msgstr "Referenzen"
+msgstr "Zitation"
 
-#: includes/blocks/single-publication-details/block.php:124
+#: includes/blocks/single-publication-details/block.php:165
 msgid "Is citated in"
-msgstr "Wird zitiert in"
+msgstr "Wurde zitiert in"
 
-#: includes/blocks/single-publication-details/block.php:141
+#: includes/blocks/single-publication-details/block.php:190
 msgid "Keywords"
 msgstr "Schlagwörter"
 
-#: includes/blocks/single-publication-details/block.php:153
+#: includes/blocks/single-publication-details/block.php:211
 msgid "citation suggestion"
-msgstr "Zitiervorschlag"
+msgstr "Zitationsvorschlag"
 
-#: includes/blocks/single-publication-details/block.php:157
+#: includes/blocks/single-publication-details/block.php:215
 msgid "Generate RIS file"
 msgstr "RIS-Datei erstellen"
 
 #: includes/classes/class-ajax-loadmore-publikationsliste.php:105
-msgid "Show details"
-msgstr "Zeige Details"
-
-#: includes/classes/class-ajax-loadmore-publikationsliste.php:106
 msgid "Details"
 msgstr "Details"
 
-#: includes/classes/class-ajax-loadmore-teaserblock.php:100
-msgid "More"
-msgstr "Mehr"
-
 #: includes/classes/class-ajax-loadmore.php:230
 msgid "Show more"
-msgstr "Zeige mehr"
+msgstr "Mehr anzeigen"
 
 #. Plugin Name of the plugin/theme
 msgid "Marco Di Bella - Blocks 2"
@@ -125,9 +117,8 @@ msgstr "Marco Di Bella"
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
 
-#~ msgid "Also interesting"
-#~ msgstr "Auch interessant"
+#~ msgid "Show details"
+#~ msgstr "Details zeigen"
 
-#, php-format
-#~ msgid "Term: %1$s"
-#~ msgstr "Schlagwort: %1$s"
+#~ msgid "More"
+#~ msgstr "Mehr"

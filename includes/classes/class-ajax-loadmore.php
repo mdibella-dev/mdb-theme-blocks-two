@@ -227,7 +227,7 @@ abstract class AJAX_LoadMore
                 </div>
                 <div class="wp-block-buttons is-content-justification-center">
                     <div class="wp-block-button loadmore-button" data-parentid="<?php echo $params['id']; ?>">
-                        <a class="wp-block-button__link" href="#" target="_self"><?php echo __( 'Show more', 'mdb-theme-ajax' ); ?></a>
+                        <a class="wp-block-button__link" href="#" target="_self"><?php echo __( 'Show more', $plugin_domain ); ?></a>
                     </div>
                 </div>
             </div>

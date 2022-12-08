@@ -99,7 +99,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
         ob_start();
         ?>
 
-        <h2 class="publication-section-title"><?php echo ( 1 !== $count )? __( 'Authors', 'mdb-theme-blocks') : __( 'Author', 'mdb-theme-blocks'); ?></h2>
+        <h2 class="publication-section-title"><?php echo ( 1 !== $count )? __( 'Authors', $plugin_domain ) : __( 'Author', $plugin_domain ); ?></h2>
         <p><?php echo implode( ', ', $authors ); ?></p>
 
         <?php
@@ -118,7 +118,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
         ob_start();
         ?>
 
-        <h2 class="publication-section-title"><?php echo __( 'Abstract', 'mdb-theme-blocks'); ?></h2>
+        <h2 class="publication-section-title"><?php echo __( 'Abstract', $plugin_domain ); ?></h2>
         <?php echo apply_filters( 'the_content', get_the_content( $block->context['postId'] ) ); ?>
 
         <?php
@@ -137,7 +137,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
         ob_start();
         ?>
 
-        <h2 class="publication-section-title"><?php echo __( 'Citation', 'mdb-theme-blocks'); ?></h2>
+        <h2 class="publication-section-title"><?php echo __( 'Citation', $plugin_domain ); ?></h2>
         <ol>
             <?php
             foreach( $data['reference'] as $reference ) :
@@ -162,7 +162,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
         ob_start();
         ?>
 
-        <h2 class="publication-section-title"><?php echo __( 'Is citated in', 'mdb-theme-blocks'); ?></h2>
+        <h2 class="publication-section-title"><?php echo __( 'Is citated in', $plugin_domain ); ?></h2>
         <ol>
             <?php
             foreach( $data['citation'] as $citation ) :
@@ -187,7 +187,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
         ob_start();
         ?>
 
-        <h2 class="publication-section-title"><?php echo __( 'Keywords', 'mdb-theme-blocks'); ?></h2>
+        <h2 class="publication-section-title"><?php echo __( 'Keywords', $plugin_domain ); ?></h2>
         <p><?php
             foreach( $data['keywords'] as $keyword ) :
                 ?><span class="publication-keyword"><?php echo $keyword->name; ?></span><?php
@@ -212,7 +212,7 @@ function render_block_single_publication_details( $attributes, $content, $block 
     <p><?php echo api_build_citation( $block->context['postId'] ); ?></p>
     <div class="wp-block-buttons is-content-justification-center" style="display: flex; padding-top: 4rem;" >
         <div class="wp-block-button" data-parentid="<?php echo $params['id']; ?>">
-            <a class="wp-block-button__link" href="/citation/<?php echo $block->context['postId']; ?>" rel="nofollow"><?php echo __( 'Generate RIS file', 'mdb-theme-blocks'); ?></a>
+            <a class="wp-block-button__link" href="/citation/<?php echo $block->context['postId']; ?>" rel="nofollow"><?php echo __( 'Generate RIS file', $plugin_domain ); ?></a>
         </div>
     </div>
 

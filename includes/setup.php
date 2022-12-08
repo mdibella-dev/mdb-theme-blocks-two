@@ -54,7 +54,7 @@ register_deactivation_hook( __FILE__, 'mdb_theme_blocks_two\plugin_deactivation'
 function plugin_init()
 {
     // Load text domain
-    load_plugin_textdomain( 'mdb-theme-blocks', false, dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages' );
+    load_plugin_textdomain( $plugin_domain, false, dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages' );
 }
 
 add_action( 'init', 'mdb_theme_blocks_two\plugin_init' );

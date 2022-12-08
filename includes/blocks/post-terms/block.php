@@ -48,7 +48,7 @@ function render_block_post_terms( $attributes, $content, $block )
                href="<?php echo get_tag_link( $tag->term_id ); ?>"
                rel="tag"
                target="_self"
-               title="<?php echo sprintf( __( 'More posts with the term %1$s', 'mdb-theme-blocks' ), $tag->name ); ?>"><?php echo trim($tag->name); ?></a>
+               title="<?php echo sprintf( __( 'More posts with the term %1$s', $plugin_domain ), $tag->name ); ?>"><?php echo trim($tag->name); ?></a>
         </li>
         <?php
         endforeach;
