@@ -1,4 +1,4 @@
-#Marco Di Bella - Blocks 2
+# Marco Di Bella - Blocks 2
 This plugin adds custom blocks to the Gutenberg editor for use in Marco Di Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement for mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0).
 
 __Contributors:__ mdibella-dev
@@ -17,7 +17,7 @@ __Tested up to:__ WordPress 6.1
 * Improve: Add separator block in single-publication-details.
 * Bugfix: Wrong textdomain.
 * Bugfix: Namespace in plugin.php.
-* Bugfix: Translation not loaded (#1). 
+* Bugfix: Translation not loaded (#1).
 
 
 
