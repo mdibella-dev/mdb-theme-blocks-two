@@ -33,9 +33,7 @@ abstract class AJAX_LoadMore
 
     static function prepare_template( $filename )
     {
-        global $plugin_path;
-
-        $filepath = $plugin_path . '/includes/templates/' . $filename . '.php';
+        $filepath = dirname( plugin_dir_path( __FILE__ ) ) . '/templates/' . $filename . '.php';
         $buffer   = '';
 
         if( true === file_exists( $filepath ) ) :
@@ -227,7 +225,7 @@ abstract class AJAX_LoadMore
                 </div>
                 <div class="wp-block-buttons is-content-justification-center">
                     <div class="wp-block-button loadmore-button" data-parentid="<?php echo $params['id']; ?>">
-                        <a class="wp-block-button__link" href="#" target="_self"><?php echo __( 'Show more', $plugin_domain ); ?></a>
+                        <a class="wp-block-button__link" href="#" target="_self"><?php echo __( 'Show more', PLUGIN_DOMAIN ); ?></a>
                     </div>
                 </div>
             </div>

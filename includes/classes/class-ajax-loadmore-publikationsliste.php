@@ -102,7 +102,7 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
         $replacements = array(
             '_PUBTITLE_'     => $part[0],
             '_PUBCITE_'      => $part[1],
-            '_DETAILS_'      => __( 'Details', $plugin_domain ),
+            '_DETAILS_'      => __( 'Details', PLUGIN_DOMAIN ),
             '_ID_'           => $post->ID,
             '_LINK_'         => get_permalink( $post->ID ),
         );

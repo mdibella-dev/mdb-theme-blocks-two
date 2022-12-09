@@ -16,6 +16,8 @@ __Tested up to:__ WordPress 6.1
 * Improve: Change section generation in single-publication-details.
 * Improve: Add separator block in single-publication-details.
 * Bugfix: Wrong textdomain.
+* Bugfix: Namespace in plugin.php.
+* Bugfix: Translation not loaded. 
 
 
 
