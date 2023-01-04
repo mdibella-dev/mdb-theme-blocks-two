@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks_two;
+namespace mdb_theme_blocks;
 use function \mdb_theme_core\publication__is_publication as api_is_publication;
 use function \mdb_theme_core\publication__build_citation as api_build_citation;
 use function \mdb_theme_core\publication__get_data as api_get_data;
@@ -246,9 +246,9 @@ function register_block_single_publication_details()
     register_block_type_from_metadata(
         __DIR__,
         array(
-            'render_callback' => 'mdb_theme_blocks_two\render_block_single_publication_details',
+            'render_callback' => 'mdb_theme_blocks\render_block_single_publication_details',
         )
     );
 }
 
-add_action( 'init', 'mdb_theme_blocks_two\register_block_single_publication_details' );
+add_action( 'init', 'mdb_theme_blocks\register_block_single_publication_details' );

@@ -13,7 +13,8 @@ __Tested up to:__ WordPress 6.1
 *New/Improve/Bugfix*
 
 ### main
-* Improve: Simplfy package info.
+* Improve: Simplify package info.
+* Improve: Simplify namespace.
 
 
 

@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks_two;
+namespace mdb_theme_blocks;
 
 
 /** Prevent direct access */
@@ -71,4 +71,4 @@ function shortcode_vortragsliste( $atts, $content = null )
     return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
-add_shortcode( 'vortragsliste', 'mdb_theme_blocks_two\shortcode_vortragsliste' );
+add_shortcode( 'vortragsliste', 'mdb_theme_blocks\shortcode_vortragsliste' );

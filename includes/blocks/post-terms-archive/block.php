@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks_two;
+namespace mdb_theme_blocks;
 
 
 /** Prevent direct access */
@@ -56,9 +56,9 @@ function register_block_post_terms_archive()
     register_block_type_from_metadata(
         __DIR__,
         array(
-            'render_callback' => 'mdb_theme_blocks_two\render_block_post_terms_archive',
+            'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
         )
     );
 }
 
-add_action( 'init', 'mdb_theme_blocks_two\register_block_post_terms_archive' );
+add_action( 'init', 'mdb_theme_blocks\register_block_post_terms_archive' );

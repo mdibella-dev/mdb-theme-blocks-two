@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks_two;
+namespace mdb_theme_blocks;
 
 
 /** Prevent direct access */
@@ -36,4 +36,4 @@ function add_block_categories( $block_categories, $block_editor_context )
     );
 }
 
-add_filter( 'block_categories_all', 'mdb_theme_blocks_two\add_block_categories', 10, 2 );
+add_filter( 'block_categories_all', 'mdb_theme_blocks\add_block_categories', 10, 2 );

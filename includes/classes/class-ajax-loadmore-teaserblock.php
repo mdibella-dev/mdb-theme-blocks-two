@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 
-namespace mdb_theme_blocks_two;
+namespace mdb_theme_blocks;
 
 
 /** Prevent direct access */
@@ -105,8 +105,8 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
     }
 }
 
-add_action( 'wp_ajax_teaserblock', array( 'mdb_theme_blocks_two\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ) );
-add_action( 'wp_ajax_nopriv_teaserblock', array( 'mdb_theme_blocks_two\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ) );
+add_action( 'wp_ajax_teaserblock', array( 'mdb_theme_blocks\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ) );
+add_action( 'wp_ajax_nopriv_teaserblock', array( 'mdb_theme_blocks\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ) );
 
 
 AJAX_LoadMore_Teaserblock::__constructStatic();
