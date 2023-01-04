@@ -3,7 +3,7 @@
  * Functions to activate, initiate and deactivate the plugin.
  *
  * @author  Marco Di Bella
- * @package mdb-theme-blocks-two
+ * @package mdb-theme-blocks
  */
 
 namespace mdb_theme_blocks_two;

@@ -3,7 +3,7 @@
  * A template file for AJAX driven content.
  *
  * @author  Marco Di Bella
- * @package mdb-theme-blocks-two
+ * @package mdb-theme-blocks
  */
 ?>
 
