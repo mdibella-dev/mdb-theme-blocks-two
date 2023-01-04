@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Marco Di Bella - Blocks 2\n"
-"POT-Creation-Date: 2022-12-08 12:09+0100\n"
-"PO-Revision-Date: 2022-12-08 12:21+0100\n"
+"POT-Creation-Date: 2023-01-04 20:53+0100\n"
+"PO-Revision-Date: 2023-01-04 20:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -36,11 +36,6 @@ msgstr "Schlagwort"
 #: includes/blocks/post-terms/block.js:8
 msgid "Shows the post terms as a button list."
 msgstr "Zeigt die Schlagworte eines Beitrags in Form einer Schaltflächenliste."
-
-#: includes/blocks/post-terms/block.php:51
-#, php-format
-msgid "More posts with the term %1$s"
-msgstr "Weitere Beiträge mit dem Schlagwort %1$s"
 
 #: includes/blocks/related-posts/block.js:8
 msgid "Shows the related posts."
@@ -86,7 +81,7 @@ msgstr "RIS-Datei erstellen"
 msgid "Details"
 msgstr "Details"
 
-#: includes/classes/class-ajax-loadmore.php:230
+#: includes/classes/class-ajax-loadmore.php:228
 msgid "Show more"
 msgstr "Mehr anzeigen"
 
@@ -116,6 +111,10 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#, php-format
+#~ msgid "More posts with the term %1$s"
+#~ msgstr "Weitere Beiträge mit dem Schlagwort %1$s"
 
 #~ msgid "Show details"
 #~ msgstr "Details zeigen"
