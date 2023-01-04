@@ -2,7 +2,7 @@
     "$schema": "https://json.schemastore.org/block.json",
     "apiVersion": 2,
     "name": "mdb-theme-blocks/related-posts",
-    "title": "Related posts",
+    "title": "Related Posts",
     "description": "Shows the related posts.",
     "category": "mdb-theme-blocks",
     "icon": "media-default",
