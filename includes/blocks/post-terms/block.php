@@ -47,8 +47,7 @@ function render_block_post_terms( $attributes, $content, $block )
             <a class="button button-tag"
                href="<?php echo get_tag_link( $tag->term_id ); ?>"
                rel="tag"
-               target="_self"
-               title="<?php echo sprintf( __( 'More posts with the term %1$s', PLUGIN_DOMAIN ), $tag->name ); ?>"><?php echo trim($tag->name); ?></a>
+               target="_self"><?php echo trim($tag->name); ?></a>
         </li>
         <?php
         endforeach;

@@ -16,6 +16,7 @@ __Tested up to:__ WordPress 6.1
 * Improve: Simplify package info.
 * Improve: Simplify namespace.
 * Improve: Provide the localizable texts available in block.json in the correct source language.
+* Improve: Remove title from post-terms' links.
 
 
 
