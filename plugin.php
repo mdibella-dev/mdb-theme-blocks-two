@@ -5,7 +5,7 @@
  * Description:     This plugin adds custom blocks to the Gutenberg editor for use in Marco Di Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement of mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0).
  * Author:          Marco Di Bella
  * Author URI:      https://www.marcodibella.de
- * Version:         1.0.1
+ * Version:         1.1.0
  * Text Domain:     mdb-theme-blocks
  * Domain Path:     /languages
  *
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) or exit;
 
 /** Variables and definitions **/
 
-const PLUGIN_VERSION = '1.0.1';
+const PLUGIN_VERSION = '1.1.0';
 const PLUGIN_DOMAIN  = 'mdb-theme-blocks';
 
 
