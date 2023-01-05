@@ -246,6 +246,8 @@ function register_block_single_publication_details()
     register_block_type_from_metadata(
         __DIR__,
         array(
+            'title'           => __( 'Publication Details', PLUGIN_DOMAIN ),
+            'description'     => __( 'Shows the details of a single publication.', PLUGIN_DOMAIN ),
             'render_callback' => 'mdb_theme_blocks\render_block_single_publication_details',
         )
     );

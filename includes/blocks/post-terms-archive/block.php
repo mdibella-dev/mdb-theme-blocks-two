@@ -56,6 +56,8 @@ function register_block_post_terms_archive()
     register_block_type_from_metadata(
         __DIR__,
         array(
+            'title'           => __( 'Tags Archive', PLUGIN_DOMAIN ),
+            'description'     => __( 'Lists all articles that are tagged with a specific keyword.', PLUGIN_DOMAIN ),
             'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
         )
     );

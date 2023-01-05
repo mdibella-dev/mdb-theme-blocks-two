@@ -73,6 +73,8 @@ function register_block_post_terms()
     register_block_type_from_metadata(
         __DIR__,
         array(
+            'title'           => __( 'Article Tags Navigation', PLUGIN_DOMAIN ),
+            'description'     => __( 'Creates a button navigation with the post tags.', PLUGIN_DOMAIN ),
             'render_callback' => 'mdb_theme_blocks\render_block_post_terms',
         )
     );

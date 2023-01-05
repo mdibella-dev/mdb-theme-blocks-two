@@ -18,6 +18,7 @@ __Tested up to:__ WordPress 6.1
 * Improve: Provide the localizable texts available in block.json in the correct source language.
 * Improve: Remove title from post-terms' links.
 * Bugfix: Blocks: Fix schema path.
+* Bugfix: Blocks: Use translation for title and description.
 
 
 

@@ -88,6 +88,8 @@ function register_block_related_posts()
     register_block_type_from_metadata(
         __DIR__,
         array(
+            'title'           => __( 'Related Posts', PLUGIN_DOMAIN ),
+            'description'     => __( 'Shows the related posts.', PLUGIN_DOMAIN ),
             'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
         )
     );
