@@ -85,6 +85,13 @@ function render_block_related_posts( $attributes, $content, $block )
 
 function register_block_related_posts()
 {
+    // Check if Gutenberg exist
+    if( ! function_exists( 'register_block_type_from_metadata' ) ) :
+        return;
+    endif;
+
+
+    // Register block
     register_block_type_from_metadata(
         __DIR__,
         array(

@@ -243,6 +243,13 @@ function render_block_single_publication_details( $attributes, $content, $block 
 
 function register_block_single_publication_details()
 {
+    // Check if Gutenberg exist
+    if( ! function_exists( 'register_block_type_from_metadata' ) ) :
+        return;
+    endif;
+
+
+    // Register block
     register_block_type_from_metadata(
         __DIR__,
         array(

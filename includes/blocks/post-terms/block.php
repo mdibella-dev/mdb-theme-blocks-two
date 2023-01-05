@@ -70,6 +70,13 @@ function render_block_post_terms( $attributes, $content, $block )
 
 function register_block_post_terms()
 {
+    // Check if Gutenberg exist
+    if( ! function_exists( 'register_block_type_from_metadata' ) ) :
+        return;
+    endif;
+
+
+    // Register block
     register_block_type_from_metadata(
         __DIR__,
         array(
