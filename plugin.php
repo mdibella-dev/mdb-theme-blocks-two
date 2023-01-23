@@ -7,7 +7,6 @@
  * Author URI:      https://www.marcodibella.de
  * Version:         1.1.0
  * Text Domain:     mdb-theme-blocks
- * Domain Path:     /languages
  *
  * @author  Marco Di Bella
  * @package mdb-theme-blocks
@@ -48,3 +47,5 @@ require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/post-terms-archive/
 require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/related-posts/block.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/download-container/block.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/single-publication-details/block.php' );
+
+require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/symple/block.php' );

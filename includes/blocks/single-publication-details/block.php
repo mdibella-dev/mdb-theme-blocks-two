@@ -237,27 +237,24 @@ function render_block_single_publication_details( $attributes, $content, $block 
 
 
 
-/**
- * Registers the callback function.
- */
+if( function_exists( 'register_block_type' ) ) :
 
-function register_block_single_publication_details()
-{
-    // Check if Gutenberg exist
-    if( ! function_exists( 'register_block_type_from_metadata' ) ) :
-        return;
-    endif;
+    /**
+     * Registers the block.
+     */
 
+    function register_block_single_publication_details()
+    {
+        register_block_type(
+            __DIR__,
+            array(
+                'title'           => __( 'Publication Details', PLUGIN_DOMAIN ),
+                'description'     => __( 'Shows the details of a single publication.', PLUGIN_DOMAIN ),
+                'render_callback' => 'mdb_theme_blocks\render_block_single_publication_details',
+            )
+        );
+    }
 
-    // Register block
-    register_block_type_from_metadata(
-        __DIR__,
-        array(
-            'title'           => __( 'Publication Details', PLUGIN_DOMAIN ),
-            'description'     => __( 'Shows the details of a single publication.', PLUGIN_DOMAIN ),
-            'render_callback' => 'mdb_theme_blocks\render_block_single_publication_details',
-        )
-    );
-}
+    add_action( 'init', 'mdb_theme_blocks\register_block_single_publication_details' );
 
-add_action( 'init', 'mdb_theme_blocks\register_block_single_publication_details' );
+endif;

@@ -79,27 +79,24 @@ function render_block_related_posts( $attributes, $content, $block )
 
 
 
-/**
- * Registers the callback function.
- */
+if( function_exists( 'register_block_type' ) ) :
 
-function register_block_related_posts()
-{
-    // Check if Gutenberg exist
-    if( ! function_exists( 'register_block_type_from_metadata' ) ) :
-        return;
-    endif;
+    /**
+     * Registers the block.
+     */
 
+    function register_block_related_posts()
+    {
+        register_block_type(
+            __DIR__,
+            array(
+                'title'           => __( 'Related Posts', PLUGIN_DOMAIN ),
+                'description'     => __( 'Shows the related posts.', PLUGIN_DOMAIN ),
+                'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
+            )
+        );
+    }
 
-    // Register block
-    register_block_type_from_metadata(
-        __DIR__,
-        array(
-            'title'           => __( 'Related Posts', PLUGIN_DOMAIN ),
-            'description'     => __( 'Shows the related posts.', PLUGIN_DOMAIN ),
-            'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
-        )
-    );
-}
+    add_action( 'init', 'mdb_theme_blocks\register_block_related_posts' );
 
-add_action( 'init', 'mdb_theme_blocks\register_block_related_posts' );
+endif;

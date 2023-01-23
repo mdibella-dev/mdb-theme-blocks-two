@@ -47,27 +47,25 @@ function render_block_post_terms_archive( $attributes, $content, $block )
 
 
 
-/**
- * Registers the callback function.
- */
+if( function_exists( 'register_block_type' ) ) :
 
-function register_block_post_terms_archive()
-{
-    // Check if Gutenberg exist
-    if( ! function_exists( 'register_block_type_from_metadata' ) ) :
-        return;
-    endif;
+    /**
+     * Registers the block.
+     */
 
+    function register_block_post_terms_archive()
+    {
+        register_block_type(
+            __DIR__,
+            array(
+                'title'           => __( 'Tags Archive', PLUGIN_DOMAIN ),
+                'description'     => __( 'Lists all articles that are tagged with a specific keyword.', PLUGIN_DOMAIN ),
+                'textdomain'      => PLUGIN_DOMAIN,
+                'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
+            )
+        );
+    }
 
-    // Register block
-    register_block_type_from_metadata(
-        __DIR__,
-        array(
-            'title'           => __( 'Tags Archive', PLUGIN_DOMAIN ),
-            'description'     => __( 'Lists all articles that are tagged with a specific keyword.', PLUGIN_DOMAIN ),
-            'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
-        )
-    );
-}
+    add_action( 'init', 'mdb_theme_blocks\register_block_post_terms_archive' );
 
-add_action( 'init', 'mdb_theme_blocks\register_block_post_terms_archive' );
+endif;

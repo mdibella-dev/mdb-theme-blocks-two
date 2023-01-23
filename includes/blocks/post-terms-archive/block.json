@@ -10,5 +10,5 @@
     "usesContext": [ "postType", "postId", "queryId" ],
     "example": {},
     "attributes" : {},
-    "editorScript": "file:./block.js"
+    "editorScript": "file:./index.js"
 }

@@ -9,5 +9,5 @@
     "textdomain": "mdb-theme-blocks",
     "example": {},
     "attributes" : {},
-    "editorScript": "file:./block.js"
+    "editorScript": "file:./index.js"
 }

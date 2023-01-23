@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string
  */
 
-function render_block_post_terms( $attributes, $content, $block )
+function render_block_symple( $attributes, $content, $block )
 {
     global $post;
 
@@ -70,18 +70,16 @@ if( function_exists( 'register_block_type' ) ) :
      * Registers the block.
      */
 
-    function register_block_post_terms()
+    function register_block_symple()
     {
         register_block_type(
             __DIR__,
             array(
-                'title'           => __( 'Article Tags Navigation', PLUGIN_DOMAIN ),
-                'description'     => __( 'Creates a button navigation with the post tags.', PLUGIN_DOMAIN ),
-                'render_callback' => 'mdb_theme_blocks\render_block_post_terms',
+                'render_callback' => 'mdb_theme_blocks\render_block_symple',
             )
         );
     }
 
-    add_action( 'init', 'mdb_theme_blocks\register_block_post_terms' );
+    add_action( 'init', 'mdb_theme_blocks\register_block_symple' );
 
 endif;

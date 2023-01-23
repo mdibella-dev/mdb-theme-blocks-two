@@ -11,5 +11,5 @@
     "attributes": {
         "className": "download-container"
     },
-    "editorScript": "file:./block.js"
+    "editorScript": "file:./index.js"
 }
