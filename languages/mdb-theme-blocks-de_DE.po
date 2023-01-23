@@ -33,7 +33,7 @@ msgstr "Download-Container"
 msgid "A container element for providing downloads."
 msgstr "Ein Containerelement zum Bereitstellen von Downloads."
 
-#: includes/blocks/post-terms-archive/block.js:8
+#: includes/blocks/post-terms-archive/index.js:8
 msgid "Overview of the articles provided with a certain term."
 msgstr "Übersicht von Artikeln, die über ein bestimmtes Schlagwort verfügen."
 
@@ -51,7 +51,7 @@ msgstr ""
 "Listet alle Artikel auf, die mit einem bestimmten Schlüsselwort "
 "gekennzeichnet sind."
 
-#: includes/blocks/post-terms/block.js:8
+#: includes/blocks/post-terms/index.js:8
 msgid "Shows the post terms as a button list."
 msgstr "Zeigt die Schlagworte eines Beitrags in Form einer Schaltflächenliste."
 
@@ -63,7 +63,7 @@ msgstr "Schaltflächenliste mit Schlagworte"
 msgid "Creates a button navigation with the post tags."
 msgstr "Erstellt eine Schaltflächennavigation mit den Post-Tags."
 
-#: includes/blocks/related-posts/block.js:8
+#: includes/blocks/related-posts/index.js:8
 #: includes/blocks/related-posts/block.php:92
 msgid "Shows the related posts."
 msgstr "Zeigt ähnliche Beiträge an."
@@ -72,7 +72,7 @@ msgstr "Zeigt ähnliche Beiträge an."
 msgid "Related Posts"
 msgstr "Ähnliche Beiträge"
 
-#: includes/blocks/single-publication-details/block.js:8
+#: includes/blocks/single-publication-details/index.js:8
 #: includes/blocks/single-publication-details/block.php:250
 msgid "Shows the details of a single publication."
 msgstr "Zeigt die Details einer bestimmten Publikation an."
