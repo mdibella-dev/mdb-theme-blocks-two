@@ -25,27 +25,29 @@ defined( 'ABSPATH' ) or exit;
 
 const PLUGIN_VERSION = '1.1.0';
 const PLUGIN_DOMAIN  = 'mdb-theme-blocks';
+const PLUGIN_DIR     = plugin_dir_path( __FILE__ );
+const PLUGIN_URL     = plugin_dir_url( __FILE__ );
 
 
 
 /** Include files */
 
-require_once( plugin_dir_path( __FILE__ ) . 'includes/classes/class-ajax-loadmore.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/classes/class-ajax-loadmore-teaserblock.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/classes/class-ajax-loadmore-vortragsliste.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/classes/class-ajax-loadmore-publikationsliste.php' );
+require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore.php' );
+require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore-teaserblock.php' );
+require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore-vortragsliste.php' );
+require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore-publikationsliste.php' );
 
-require_once( plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-publikationsliste.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-vortragsliste.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-teaserblock.php' );
+require_once( PLUGIN_DIR . 'includes/shortcodes/shortcode-publikationsliste.php' );
+require_once( PLUGIN_DIR . 'includes/shortcodes/shortcode-vortragsliste.php' );
+require_once( PLUGIN_DIR . 'includes/shortcodes/shortcode-teaserblock.php' );
 
-require_once( plugin_dir_path( __FILE__ ) . 'includes/setup.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/block-categories.php' );
+require_once( PLUGIN_DIR . 'includes/setup.php' );
+require_once( PLUGIN_DIR . 'includes/block-categories.php' );
 
-require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/post-terms/block.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/post-terms-archive/block.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/related-posts/block.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/download-container/block.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/single-publication-details/block.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/post-terms/block.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/post-terms-archive/block.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/related-posts/block.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/download-container/block.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/single-publication-details/block.php' );
 
-require_once( plugin_dir_path( __FILE__ ) . 'includes/blocks/symple/block.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/symple/block.php' );
