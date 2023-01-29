@@ -12,6 +12,7 @@ __Tested up to:__ WordPress 6.1
 ## Changelog
 *New/Improve/Bugfix*
 
+
 ### main
 * Improve: Simplify package info.
 * Improve: Simplify namespace.
@@ -19,7 +20,6 @@ __Tested up to:__ WordPress 6.1
 * Improve: Remove title from post-terms' links.
 * Bugfix: Blocks: Fix schema path.
 * Bugfix: Blocks: Use translation for title and description.
-
 
 
 ### 1.0.1
