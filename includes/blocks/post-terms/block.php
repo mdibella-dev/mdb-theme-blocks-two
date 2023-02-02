@@ -75,8 +75,8 @@ if( function_exists( 'register_block_type' ) ) :
         register_block_type(
             __DIR__,
             array(
-                'title'           => __( 'Article Tags Navigation', PLUGIN_DOMAIN ),
-                'description'     => __( 'Creates a button navigation with the post tags.', PLUGIN_DOMAIN ),
+                'title'           => __( 'Article Tags Navigation', 'mdb-theme-blocks' ),
+                'description'     => __( 'Creates a button navigation with the post tags.', 'mdb-theme-blocks' ),
                 'render_callback' => 'mdb_theme_blocks\render_block_post_terms',
             )
         );

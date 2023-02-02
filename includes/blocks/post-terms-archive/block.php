@@ -34,7 +34,7 @@ function render_block_post_terms_archive( $attributes, $content, $block )
     ob_start();
 
     ?>
-<h1 class="wp-block-post-title has-text-align-center no-margin-bottom"><span><?php echo __( 'Term', PLUGIN_DOMAIN ) ?></span><span><?php echo single_tag_title( '', false ); ?></span></h1>
+<h1 class="wp-block-post-title has-text-align-center no-margin-bottom"><span><?php echo __( 'Term', 'mdb-theme-blocks' ) ?></span><span><?php echo single_tag_title( '', false ); ?></span></h1>
 <div class="wp-block-spacer is-style-auto"></div>
 <?php echo do_shortcode( sprintf( '[teaserblock paged="true" tag="%1$s"]', get_query_var( 'tag_id' ) ) ); ?>
 <?php
@@ -58,9 +58,9 @@ if( function_exists( 'register_block_type' ) ) :
         register_block_type(
             __DIR__,
             array(
-                'title'           => __( 'Tags Archive', PLUGIN_DOMAIN ),
-                'description'     => __( 'Lists all articles that are tagged with a specific keyword.', PLUGIN_DOMAIN ),
-                'textdomain'      => PLUGIN_DOMAIN,
+                'title'           => __( 'Tags Archive', 'mdb-theme-blocks' ),
+                'description'     => __( 'Lists all articles that are tagged with a specific keyword.', 'mdb-theme-blocks' ),
+                'textdomain'      => 'mdb-theme-blocks',
                 'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
             )
         );

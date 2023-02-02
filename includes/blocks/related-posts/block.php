@@ -90,8 +90,8 @@ if( function_exists( 'register_block_type' ) ) :
         register_block_type(
             __DIR__,
             array(
-                'title'           => __( 'Related Posts', PLUGIN_DOMAIN ),
-                'description'     => __( 'Shows the related posts.', PLUGIN_DOMAIN ),
+                'title'           => __( 'Related Posts', 'mdb-theme-blocks' ),
+                'description'     => __( 'Shows the related posts.', 'mdb-theme-blocks' ),
                 'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
             )
         );

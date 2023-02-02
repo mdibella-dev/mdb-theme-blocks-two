@@ -9,6 +9,7 @@ __Requires at least:__ WordPress 6.0
 
 __Tested up to:__ WordPress 6.1
 
+
 ## Changelog
 *New/Improve/Bugfix*
 
@@ -18,6 +19,7 @@ __Tested up to:__ WordPress 6.1
 * Improve: Simplify namespace.
 * Improve: Provide the localizable texts available in block.json in the correct source language.
 * Improve: Remove title from post-terms' links.
+* Improve: Replace text domain constant with text domain string.
 * Bugfix: Blocks: Fix schema path.
 * Bugfix: Blocks: Use translation for title and description.
 

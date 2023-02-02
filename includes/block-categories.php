@@ -30,7 +30,7 @@ function add_block_categories( $block_categories, $block_editor_context )
         array(
             array(
                 'slug'  => 'mdb-theme-blocks',
-                'title' => __( "Marco Di Bella's theme blocks", PLUGIN_DOMAIN ),
+                'title' => __( "Marco Di Bella's theme blocks", 'mdb-theme-blocks' ),
             ),
         )
     );

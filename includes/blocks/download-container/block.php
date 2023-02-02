@@ -27,8 +27,8 @@ if( function_exists( 'register_block_type' ) ) :
         register_block_type(
             __DIR__,
             array(
-                'title'           => __( 'Download Container', PLUGIN_DOMAIN ),
-                'description'     => __( 'A container element for providing downloads.', PLUGIN_DOMAIN ),
+                'title'           => __( 'Download Container', 'mdb-theme-blocks' ),
+                'description'     => __( 'A container element for providing downloads.', 'mdb-theme-blocks' ),
             )
         );
     }
