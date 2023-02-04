@@ -15,6 +15,9 @@ __Tested up to:__ WordPress 6.1
 
 
 ### main
+
+
+### 1.1.0
 * Improve: Documentation style.
 * Improve: Include shortcode, class and block files package-wise via index.php
 * Improve: Simplify package info.
