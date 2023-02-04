@@ -15,6 +15,7 @@ __Tested up to:__ WordPress 6.1
 
 
 ### main
+* Improve: Include shortcode, class and block files package-wise via index.php
 * Improve: Simplify package info.
 * Improve: Simplify namespace.
 * Improve: Provide the localizable texts available in block.json in the correct source language.
