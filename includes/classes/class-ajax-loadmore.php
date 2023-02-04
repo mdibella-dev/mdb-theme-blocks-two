@@ -19,6 +19,7 @@ defined( 'ABSPATH' ) or exit;
  * Generic class for implementing AJAX-driven 'LoadMore' elements.
  *
  * @since 1.0.0
+ *
  * @todo  Integrate shortcode functionality.
  */
 
@@ -28,7 +29,10 @@ abstract class AJAX_LoadMore
      * Reads in the HTML template for dynamic output and returns it for storage.
      *
      * @since 1.0.0
-     * @param string $filename    The filename of the template.
+     *
+     * @param string $filename The filename of the template.
+     *
+     * @return string The template.
      */
 
     static function prepare_template( $filename )
@@ -50,43 +54,53 @@ abstract class AJAX_LoadMore
     }
 
 
+
     /**
      * Returns the (saved) HTML template for the dynamic output.
      *
      * @since 1.0.0
-     * @return string    The HTML template.
+     *
+     * @return string The HTML template.
      */
 
     abstract static function get_template();
 
 
+
     /**
      * Returns the content (generated depending on the specific post) to be replaced in the HTML template.
      *
-     * @since  1.0.0
-     * @param  WP_POST $post    The post (aka record) to generate the replacements for.
-     * @return array            An associative array containing the replacement terms.
+     * @since 1.0.0
+     *
+     * @param WP_POST $post The post (aka record) to generate the replacements for.
+     *
+     * @return array An associative array containing the replacement terms.
      */
 
     abstract static function get_replacements( $post );
 
 
+
     /**
      * Determines the dynamically adding contributions (records).
      *
-     * @since  1.0.0
-     * @param  array $params    The LoadMore parameters.
-     * @return array            An array of matching WP_POST objects.
+     * @since 1.0.0
+     *
+     * @param array $params The LoadMore parameters.
+     *
+     * @return array An array of matching WP_POST objects.
      */
 
     abstract static function get_posts( $params );
+
 
 
     /**
      * Returns an array containing the LoadMore parameters (as key) and their default values ​​(as value).
      *
      * @since 1.0.0
-     * @return array    The array.
+     *
+     * @return array An associative array containing the replacement terms.
      */
 
     static function get_default_params()
@@ -106,12 +120,15 @@ abstract class AJAX_LoadMore
     }
 
 
+
     /**
      * Generates the dynamic output.
      *
-     * @since  1.0.0
-     * @param  array  $params    The LoadMore parameters.
-     * @return string            The output.
+     * @since 1.0.0
+     *
+     * @param array $params The LoadMore parameters.
+     *
+     * @return string The output.
      */
 
     static function render_dynamic_content( $params )
@@ -152,6 +169,7 @@ abstract class AJAX_LoadMore
     }
 
 
+
     /**
      * Determines the LoadMore parameters submitted via $_POST and then calls render_dynamic_content().
      *
@@ -174,10 +192,16 @@ abstract class AJAX_LoadMore
     }
 
 
+
     /**
      * Generates the output.
      *
      * @since 1.0.0
+     *
+     * @param array  $params The parameters of the ajax object.
+     * @param string $ajax   The content.
+     *
+     * @return string The output.
      */
 
     static function prepare_output( $params, $ajax )
@@ -240,5 +264,4 @@ abstract class AJAX_LoadMore
 
         return $output;
     }
-
 }
