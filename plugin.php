@@ -31,22 +31,9 @@ define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 /** Include files */
 
-require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore.php' );
-require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore-teaserblock.php' );
-require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore-vortragsliste.php' );
-require_once( PLUGIN_DIR . 'includes/classes/class-ajax-loadmore-publikationsliste.php' );
+require_once( PLUGIN_DIR . 'includes/classes/index.php' );
+require_once( PLUGIN_DIR . 'includes/shortcodes/index.php' );
+require_once( PLUGIN_DIR . 'includes/blocks/index.php' );
 
-require_once( PLUGIN_DIR . 'includes/shortcodes/shortcode-publikationsliste.php' );
-require_once( PLUGIN_DIR . 'includes/shortcodes/shortcode-vortragsliste.php' );
-require_once( PLUGIN_DIR . 'includes/shortcodes/shortcode-teaserblock.php' );
-
-require_once( PLUGIN_DIR . 'includes/setup.php' );
 require_once( PLUGIN_DIR . 'includes/block-categories.php' );
-
-require_once( PLUGIN_DIR . 'includes/blocks/post-terms/block.php' );
-require_once( PLUGIN_DIR . 'includes/blocks/post-terms-archive/block.php' );
-require_once( PLUGIN_DIR . 'includes/blocks/related-posts/block.php' );
-require_once( PLUGIN_DIR . 'includes/blocks/download-container/block.php' );
-require_once( PLUGIN_DIR . 'includes/blocks/single-publication-details/block.php' );
-
-require_once( PLUGIN_DIR . 'includes/blocks/symple/block.php' );
+require_once( PLUGIN_DIR . 'includes/setup.php' );
