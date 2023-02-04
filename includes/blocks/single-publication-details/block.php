@@ -20,13 +20,15 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * Renders the block.
- *
- * @since  1.0.0
- * @param  $attributes
- * @param  $content
- * @param  $block
- * @return string
+* Renders the block.
+*
+* @since  1.0.0
+*
+* @param array $attributes Block attributes.
+* @param string $content   Block default content.
+* @param string $block     Block instance.
+*
+* @return string The dynamically rendered block output.
  */
 
 function render_block_single_publication_details( $attributes, $content, $block )

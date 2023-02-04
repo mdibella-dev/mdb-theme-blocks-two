@@ -19,10 +19,12 @@ defined( 'ABSPATH' ) or exit;
  * Renders the block.
  *
  * @since  1.0.0
- * @param  $attributes
- * @param  $content
- * @param  $block
- * @return string
+ *
+ * @param array $attributes Block attributes.
+ * @param string $content   Block default content.
+ * @param string $block     Block instance.
+ *
+ * @return string The dynamically rendered block output.
  */
 
 function render_block_post_terms( $attributes, $content, $block )
