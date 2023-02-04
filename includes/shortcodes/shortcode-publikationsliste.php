@@ -20,8 +20,8 @@ defined( 'ABSPATH' ) or exit;
  *
  * @since 1.0.0
  *
- * @param array  $atts    The parameters of the shortcode.
- * @param string $content The content encapsulated by the shortcode.
+ * @param array  $atts    Shortcode attributes.
+ * @param string $content Shortcode content (encapsulated).
  *
  * @return string The output.
  */
