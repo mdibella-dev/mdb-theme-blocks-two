@@ -19,8 +19,11 @@ defined( 'ABSPATH' ) or exit;
  * Registers the block category 'mdb-theme-blocks'.
  *
  * @since 1.0.0
- * @param array                   $block_categories         Array with all block categories.
- * @param WP_Block_Editor_Context $block_editor_context     The current block editor context.
+ *
+ * @param array                   $block_categories     Array with all block categories.
+ * @param WP_Block_Editor_Context $block_editor_context The current block editor context.
+ *
+ * @return array Array with all block categories (modified). 
  */
 
 function add_block_categories( $block_categories, $block_editor_context )
