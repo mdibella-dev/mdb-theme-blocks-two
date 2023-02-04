@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) or exit;
  * @param array                   $block_categories     Array with all block categories.
  * @param WP_Block_Editor_Context $block_editor_context The current block editor context.
  *
- * @return array Array with all block categories (modified). 
+ * @return array Array with all block categories (modified).
  */
 
 function add_block_categories( $block_categories, $block_editor_context )
@@ -33,7 +33,7 @@ function add_block_categories( $block_categories, $block_editor_context )
         array(
             array(
                 'slug'  => 'mdb-theme-blocks',
-                'title' => __( "Marco Di Bella's theme blocks", 'mdb-theme-blocks' ),
+                'title' => __( "Blocks for Marco Di Bella's personal theme", 'mdb-theme-blocks' ),
             ),
         )
     );

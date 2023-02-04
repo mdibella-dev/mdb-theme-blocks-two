@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Marco Di Bella - Blocks 2\n"
-"POT-Creation-Date: 2023-01-05 17:31+0100\n"
-"PO-Revision-Date: 2023-01-05 17:34+0100\n"
+"POT-Creation-Date: 2023-02-04 20:19+0100\n"
+"PO-Revision-Date: 2023-02-04 20:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -21,109 +21,113 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: includes/block-categories.php:33
-msgid "Marco Di Bella's theme blocks"
-msgstr "Blöcke für Marco Di Bellas Theme"
+#: includes/block-categories.php:36
+msgid "Blocks for Marco Di Bella's personal theme"
+msgstr "Blöcke für Marco Di Bellas persönlichen Theme (mdb-theme-fse)"
 
-#: includes/blocks/download-container/block.php:25
+#: includes/blocks/download-container/block.php:30
 msgid "Download Container"
 msgstr "Download-Container"
 
-#: includes/blocks/download-container/block.php:26
+#: includes/blocks/download-container/block.php:31
 msgid "A container element for providing downloads."
 msgstr "Ein Containerelement zum Bereitstellen von Downloads."
 
-#: includes/blocks/post-terms-archive/index.js:8
-msgid "Overview of the articles provided with a certain term."
-msgstr "Übersicht von Artikeln, die über ein bestimmtes Schlagwort verfügen."
-
-#: includes/blocks/post-terms-archive/block.php:37
+#: includes/blocks/post-terms-archive/block.php:40
 msgid "Term"
 msgstr "Schlagwort"
 
-#: includes/blocks/post-terms-archive/block.php:59
+#: includes/blocks/post-terms-archive/block.php:64
 msgid "Tags Archive"
 msgstr "Schlagwortarchiv"
 
-#: includes/blocks/post-terms-archive/block.php:60
+#: includes/blocks/post-terms-archive/block.php:65
 msgid "Lists all articles that are tagged with a specific keyword."
 msgstr ""
 "Listet alle Artikel auf, die mit einem bestimmten Schlüsselwort "
 "gekennzeichnet sind."
 
+#: includes/blocks/post-terms-archive/index.js:8
+msgid "Overview of the articles provided with a certain term."
+msgstr "Übersicht von Artikeln, die über ein bestimmtes Schlagwort verfügen."
+
+#: includes/blocks/post-terms/block.php:80
+msgid "Article Tags Navigation"
+msgstr "Schaltflächenliste mit Schlagworte"
+
+#: includes/blocks/post-terms/block.php:81
+msgid "Creates a button navigation with the post tags."
+msgstr "Erstellt eine Schaltflächennavigation mit den Post-Tags."
+
 #: includes/blocks/post-terms/index.js:8
 msgid "Shows the post terms as a button list."
 msgstr "Zeigt die Schlagworte eines Beitrags in Form einer Schaltflächenliste."
 
-#: includes/blocks/post-terms/block.php:76
-msgid "Article Tags Navigation"
-msgstr "Schaltflächenliste mit Schlagworte"
-
-#: includes/blocks/post-terms/block.php:77
-msgid "Creates a button navigation with the post tags."
-msgstr "Erstellt eine Schaltflächennavigation mit den Post-Tags."
-
-#: includes/blocks/related-posts/index.js:8
-#: includes/blocks/related-posts/block.php:92
-msgid "Shows the related posts."
-msgstr "Zeigt ähnliche Beiträge an."
-
-#: includes/blocks/related-posts/block.php:91
+#: includes/blocks/related-posts/block.php:95
 msgid "Related Posts"
 msgstr "Ähnliche Beiträge"
 
-#: includes/blocks/single-publication-details/index.js:8
-#: includes/blocks/single-publication-details/block.php:250
-msgid "Shows the details of a single publication."
-msgstr "Zeigt die Details einer bestimmten Publikation an."
+#: includes/blocks/related-posts/block.php:96
+#: includes/blocks/related-posts/index.js:8
+msgid "Shows the related posts."
+msgstr "Zeigt ähnliche Beiträge an."
 
-#: includes/blocks/single-publication-details/block.php:102
+#: includes/blocks/single-publication-details/block.php:104
 msgid "Authors"
 msgstr "Autoren"
 
-#: includes/blocks/single-publication-details/block.php:102
+#: includes/blocks/single-publication-details/block.php:104
 msgid "Author"
 msgstr "Autor"
 
-#: includes/blocks/single-publication-details/block.php:121
+#: includes/blocks/single-publication-details/block.php:123
 msgid "Abstract"
 msgstr "Auszug"
 
-#: includes/blocks/single-publication-details/block.php:140
+#: includes/blocks/single-publication-details/block.php:142
 msgid "Citation"
 msgstr "Zitation"
 
-#: includes/blocks/single-publication-details/block.php:165
+#: includes/blocks/single-publication-details/block.php:167
 msgid "Is citated in"
 msgstr "Wurde zitiert in"
 
-#: includes/blocks/single-publication-details/block.php:190
+#: includes/blocks/single-publication-details/block.php:192
 msgid "Keywords"
 msgstr "Schlagwörter"
 
-#: includes/blocks/single-publication-details/block.php:211
+#: includes/blocks/single-publication-details/block.php:213
 msgid "citation suggestion"
 msgstr "Zitationsvorschlag"
 
-#: includes/blocks/single-publication-details/block.php:215
+#: includes/blocks/single-publication-details/block.php:217
 msgid "Generate RIS file"
 msgstr "RIS-Datei erstellen"
 
-#: includes/blocks/single-publication-details/block.php:249
+#: includes/blocks/single-publication-details/block.php:253
 msgid "Publication Details"
 msgstr "Publikationsdetails"
 
-#: includes/classes/class-ajax-loadmore-publikationsliste.php:105
+#: includes/blocks/single-publication-details/block.php:254
+#: includes/blocks/single-publication-details/index.js:8
+msgid "Shows the details of a single publication."
+msgstr "Zeigt die Details einer bestimmten Publikation an."
+
+#: includes/classes/class-ajax-loadmore-publikationsliste.php:116
 msgid "Details"
 msgstr "Details"
 
-#: includes/classes/class-ajax-loadmore.php:228
+#: includes/classes/class-ajax-loadmore.php:252
 msgid "Show more"
 msgstr "Mehr anzeigen"
 
 #. Plugin Name of the plugin/theme
-msgid "Marco Di Bella - Blocks 2"
-msgstr "Marco Di Bella - Blocks 2"
+msgid ""
+"Marco Di Bella &mdash; Blocks for Marco Di Bella's personal theme (mdb-theme-"
+"fse)"
+msgstr ""
+"Marco Di Bella &mdash; Blöcke für Marco Di Bellas persönlichen Theme (mdb-"
+"theme-fse)"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/mdb-theme-blocks-two"

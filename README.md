@@ -1,4 +1,4 @@
-# Marco Di Bella - Blocks 2
+# Marco Di Bella &mdash; Blocks for Marco Di Bella's personal theme (mdb-theme-fse)
 This plugin adds custom blocks to the Gutenberg editor for use in Marco Di Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement for mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0).
 
 __Contributors:__ mdibella-dev
@@ -11,10 +11,11 @@ __Tested up to:__ WordPress 6.1
 
 
 ## Changelog
-*New/Improve/Bugfix*
+*New / Improve / Bugfix*
 
 
 ### main
+* Improve: Documentation style.
 * Improve: Include shortcode, class and block files package-wise via index.php
 * Improve: Simplify package info.
 * Improve: Simplify namespace.
@@ -34,4 +35,4 @@ __Tested up to:__ WordPress 6.1
 
 
 ### 1.0.0
-Initial commit.
+* Initial commit.

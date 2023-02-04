@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name:     Marco Di Bella - Blocks 2
+ * Plugin Name:     Marco Di Bella &mdash; Blocks for Marco Di Bella's personal theme (mdb-theme-fse)
  * Plugin URI:      https://github.com/mdibella-dev/mdb-theme-blocks-two
  * Description:     This plugin adds custom blocks to the Gutenberg editor for use in Marco Di Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement of mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0).
  * Author:          Marco Di Bella
