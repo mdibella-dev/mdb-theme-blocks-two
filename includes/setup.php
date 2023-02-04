@@ -53,7 +53,7 @@ register_deactivation_hook( __FILE__, 'mdb_theme_blocks\plugin_deactivation' );
 
 function plugin_init()
 {
-    // Load text domain
+    // Load text domain, use relative path to the plugin's language folder
     load_plugin_textdomain( 'mdb-theme-blocks', false, plugin_basename( PLUGIN_DIR ) . '/languages' );
 }
 
