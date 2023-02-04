@@ -18,10 +18,12 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Generates a list of lectures.
  *
- * @since  1.0.0
- * @param  array  $atts       The parameters of the shortcode.
- * @param  string $content    The content encapsulated by the shortcode.
- * @return string             The output.
+ * @since 1.0.0
+ *
+ * @param array  $atts    The parameters of the shortcode.
+ * @param string $content The content encapsulated by the shortcode.
+ *
+ * @return string The output.
  */
 
 function shortcode_vortragsliste( $atts, $content = null )
