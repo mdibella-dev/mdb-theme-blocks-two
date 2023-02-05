@@ -33,7 +33,7 @@ function add_block_categories( $block_categories, $block_editor_context )
         array(
             array(
                 'slug'  => 'mdb-theme-blocks',
-                'title' => __( "Blocks for Marco Di Bella's personal theme", 'mdb-theme-blocks' ),
+                'title' => __( "Marco Di Bella's theme", 'mdb-theme-blocks' ),
             ),
         )
     );

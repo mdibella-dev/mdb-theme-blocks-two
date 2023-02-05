@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Marco Di Bella - Blocks 2\n"
-"POT-Creation-Date: 2023-02-04 20:19+0100\n"
-"PO-Revision-Date: 2023-02-04 20:20+0100\n"
+"POT-Creation-Date: 2023-02-04 20:28+0100\n"
+"PO-Revision-Date: 2023-02-04 20:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -22,8 +22,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
 #: includes/block-categories.php:36
-msgid "Blocks for Marco Di Bella's personal theme"
-msgstr "Blöcke für Marco Di Bellas persönlichen Theme (mdb-theme-fse)"
+msgid "Marco Di Bella's theme"
+msgstr "Marco Di Bellas Theme"
 
 #: includes/blocks/download-container/block.php:30
 msgid "Download Container"
@@ -122,12 +122,8 @@ msgid "Show more"
 msgstr "Mehr anzeigen"
 
 #. Plugin Name of the plugin/theme
-msgid ""
-"Marco Di Bella &mdash; Blocks for Marco Di Bella's personal theme (mdb-theme-"
-"fse)"
-msgstr ""
-"Marco Di Bella &mdash; Blöcke für Marco Di Bellas persönlichen Theme (mdb-"
-"theme-fse)"
+msgid "Marco Di Bella &mdash; Blocks for mdb-theme-fse"
+msgstr "Marco Di Bella &mdash; Blöcke für mdb-theme-fse"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/mdb-theme-blocks-two"
@@ -151,6 +147,9 @@ msgstr "Marco Di Bella"
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de"
 msgstr "https://www.marcodibella.de"
+
+#~ msgid "Blocks for Marco Di Bella's personal theme"
+#~ msgstr "Blöcke für Marco Di Bellas persönlichen Theme (mdb-theme-fse)"
 
 #, php-format
 #~ msgid "More posts with the term %1$s"
