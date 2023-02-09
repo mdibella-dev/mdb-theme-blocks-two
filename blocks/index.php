@@ -6,7 +6,7 @@
  * @package blocks-lab
  */
 
-namespace blocks_lab;
+namespace mdb_theme_blocks;
 
 
 /** Prevent direct access */
