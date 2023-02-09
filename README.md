@@ -15,6 +15,12 @@ __Tested up to:__ WordPress 6.1
 
 
 ### main
+* New: package.json
+* New: Add wp_set_script_translations() support.
+* New: Adapt block file inclusion process from blocks-lab project.
+* Improve: Reorganize block related files and folder to match those in blocks-lab project.
+* Improve: Remove check for register_block() on every single block registration.
+* Improve: Create new German translation.
 
 
 ### 1.1.0
