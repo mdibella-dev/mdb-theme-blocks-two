@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mdb-theme-blocks/post-terms",
+  "title": "Article Tags Navigation",
+  "description": "Creates a button navigation with the post tags.",
+  "icon": "tag",
+  "category": "mdb-theme-blocks",
+  "textdomain": "mdb-theme-blocks",
+  "example": {},
+  "attributes": {},
+  "editorScript": "file:./block.js"
+}

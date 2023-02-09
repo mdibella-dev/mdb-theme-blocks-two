@@ -1,0 +1,1 @@
+!function(){var e,t,o,__,n;e=window.wp.blocks,t=window.wp.i18n,o=window.wp.element,window.wp.blockEditor,__=t.__,n=o.createElement,e.registerBlockType("mdb-theme-blocks/post-terms",{edit:function(){return n("p","",__("Shows the post terms as a button list.","mdb-theme-blocks"))}})}();

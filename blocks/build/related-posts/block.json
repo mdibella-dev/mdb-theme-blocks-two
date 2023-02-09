@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mdb-theme-blocks/related-posts",
+  "title": "Related Posts",
+  "description": "Shows the related posts.",
+  "icon": "media-default",
+  "category": "mdb-theme-blocks",
+  "textdomain": "mdb-theme-blocks",
+  "usesContext": [
+    "postType",
+    "postId",
+    "queryId"
+  ],
+  "example": {},
+  "attributes": {},
+  "editorScript": "file:./block.js"
+}
