@@ -56,13 +56,14 @@ function render_block__post_terms_archive( $attributes, $content, $block )
 
 function register_block__post_terms_archive()
 {
-    register_block_type(
+    if( function_exists( 'wp_set_script_translations' ) ) :
+        wp_set_script_translations( 'mdb-theme-blocks-post-terms-archive-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
+    endif;
+
+    register_block_type_from_metadata(
         __DIR__,
         array(
-            'title'           => __( 'Tags Archive', 'mdb-theme-blocks' ),
-            'description'     => __( 'Lists all articles that are tagged with a specific keyword.', 'mdb-theme-blocks' ),
-            'textdomain'      => 'mdb-theme-blocks',
-            'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
+            'render_callback' => 'mdb_theme_blocks\render_block__post_terms_archive',
         )
     );
 }

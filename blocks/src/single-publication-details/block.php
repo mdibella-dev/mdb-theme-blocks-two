@@ -245,11 +245,13 @@ function render_block__single_publication_details( $attributes, $content, $block
 
 function register_block_single__publication_details()
 {
-    register_block_type(
+    if( function_exists( 'wp_set_script_translations' ) ) :
+        wp_set_script_translations( 'mdb-theme-blocks-single-publication-details-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
+    endif;
+
+    register_block_type_from_metadata(
         __DIR__,
         array(
-            'title'           => __( 'Publication Details', 'mdb-theme-blocks' ),
-            'description'     => __( 'Shows the details of a single publication.', 'mdb-theme-blocks' ),
             'render_callback' => 'mdb_theme_blocks\render_block__single_publication_details',
         )
     );

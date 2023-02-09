@@ -87,12 +87,14 @@ function render_block__related_posts( $attributes, $content, $block )
 
 function register_block__related_posts()
 {
-    register_block_type(
+    if( function_exists( 'wp_set_script_translations' ) ) :
+        wp_set_script_translations( 'mdb-theme-blocks-related-posts-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
+    endif;
+
+    register_block_type_from_metadata(
         __DIR__,
         array(
-            'title'           => __( 'Related Posts', 'mdb-theme-blocks' ),
-            'description'     => __( 'Shows the related posts.', 'mdb-theme-blocks' ),
-            'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
+            'render_callback' => 'mdb_theme_blocks\render_block__related_posts',
         )
     );
 }

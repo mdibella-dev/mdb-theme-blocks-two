@@ -21,12 +21,12 @@ defined( 'ABSPATH' ) or exit;
 
 function register_block__download_container()
 {
-    register_block_type(
-        __DIR__,
-        array(
-            'title'           => __( 'Download Container', 'mdb-theme-blocks' ),
-            'description'     => __( 'A container element for providing downloads.', 'mdb-theme-blocks' ),
-        )
+    if( function_exists( 'wp_set_script_translations' ) ) :
+        wp_set_script_translations( 'mdb-theme-blocks-download-container-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
+    endif;
+
+    register_block_type_from_metadata(
+        __DIR__
     );
 }
 
