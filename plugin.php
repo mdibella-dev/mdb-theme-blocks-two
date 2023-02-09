@@ -33,7 +33,7 @@ define( __NAMESPACE__ . '\PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 require_once( PLUGIN_DIR . 'includes/classes/index.php' );
 require_once( PLUGIN_DIR . 'includes/shortcodes/index.php' );
-require_once( PLUGIN_DIR . 'includes/blocks/index.php' );
-
 require_once( PLUGIN_DIR . 'includes/block-categories.php' );
 require_once( PLUGIN_DIR . 'includes/setup.php' );
+
+require_once( PLUGIN_DIR . 'blocks/index.php' );
