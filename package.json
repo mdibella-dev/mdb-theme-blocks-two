@@ -1,0 +1,13 @@
+{
+    "name": "blocks-lab",
+    "description": "Marco Di Bella's Block Collection (mdb-theme-fse)",
+    "scripts": {
+        "build": "wp-scripts build --webpack-copy-php",
+        "build:blocks": "wp-scripts build --webpack-copy-php --webpack-src-dir=blocks/src --output-path=blocks/build",
+        "start": "wp-scripts start"
+    },
+    "devDependencies": {
+        "@wordpress/i18n": "^4.26.0",
+        "@wordpress/scripts": "^23.7.2"
+    }
+}
