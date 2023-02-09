@@ -4,11 +4,11 @@
     "name": "mdb-theme-blocks/post-terms-archive",
     "title": "Tags Archive",
     "description": "Lists all articles that are tagged with a specific keyword.",
-    "category": "mdb-theme-blocks",
     "icon": "tag",
+    "category": "mdb-theme-blocks",
     "textdomain": "mdb-theme-blocks",
     "usesContext": [ "postType", "postId", "queryId" ],
     "example": {},
     "attributes" : {},
-    "editorScript": "file:./index.js"
+    "editorScript": "file:./block.js"
 }

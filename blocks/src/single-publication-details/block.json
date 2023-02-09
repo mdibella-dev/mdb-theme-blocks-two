@@ -4,11 +4,11 @@
     "name": "mdb-theme-blocks/single-publication-details",
     "title": "Publication Details",
     "description": "Shows the details of a single publication.",
-    "category": "mdb-theme-blocks",
     "icon": "media-document",
+    "category": "mdb-theme-blocks",
     "textdomain": "mdb-theme-blocks",
     "usesContext": [ "postType", "postId", "queryId" ],
     "example": {},
     "attributes" : {},
-    "editorScript": "file:./index.js"
+    "editorScript": "file:./block.js"
 }
