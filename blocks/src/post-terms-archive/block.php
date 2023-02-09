@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) or exit;
 
  */
 
-function render_block_post_terms_archive( $attributes, $content, $block )
+function render_block__post_terms_archive( $attributes, $content, $block )
 {
     if( ! isset( $block->context['postId'] ) ) :
         return '';
@@ -50,25 +50,21 @@ function render_block_post_terms_archive( $attributes, $content, $block )
 
 
 
-if( function_exists( 'register_block_type' ) ) :
+/**
+ * Registers the block.
+ */
 
-    /**
-     * Registers the block.
-     */
+function register_block__post_terms_archive()
+{
+    register_block_type(
+        __DIR__,
+        array(
+            'title'           => __( 'Tags Archive', 'mdb-theme-blocks' ),
+            'description'     => __( 'Lists all articles that are tagged with a specific keyword.', 'mdb-theme-blocks' ),
+            'textdomain'      => 'mdb-theme-blocks',
+            'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
+        )
+    );
+}
 
-    function register_block_post_terms_archive()
-    {
-        register_block_type(
-            __DIR__,
-            array(
-                'title'           => __( 'Tags Archive', 'mdb-theme-blocks' ),
-                'description'     => __( 'Lists all articles that are tagged with a specific keyword.', 'mdb-theme-blocks' ),
-                'textdomain'      => 'mdb-theme-blocks',
-                'render_callback' => 'mdb_theme_blocks\render_block_post_terms_archive',
-            )
-        );
-    }
-
-    add_action( 'init', 'mdb_theme_blocks\register_block_post_terms_archive' );
-
-endif;
+add_action( 'init', 'mdb_theme_blocks\register_block__post_terms_archive' );

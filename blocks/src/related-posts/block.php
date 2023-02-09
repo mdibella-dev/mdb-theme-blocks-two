@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string The dynamically rendered block output.
  */
 
-function render_block_related_posts( $attributes, $content, $block )
+function render_block__related_posts( $attributes, $content, $block )
 {
     if( ! isset( $block->context['postId'] ) ) :
         return '';
@@ -81,24 +81,20 @@ function render_block_related_posts( $attributes, $content, $block )
 
 
 
-if( function_exists( 'register_block_type' ) ) :
+/**
+ * Registers the block.
+ */
 
-    /**
-     * Registers the block.
-     */
+function register_block__related_posts()
+{
+    register_block_type(
+        __DIR__,
+        array(
+            'title'           => __( 'Related Posts', 'mdb-theme-blocks' ),
+            'description'     => __( 'Shows the related posts.', 'mdb-theme-blocks' ),
+            'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
+        )
+    );
+}
 
-    function register_block_related_posts()
-    {
-        register_block_type(
-            __DIR__,
-            array(
-                'title'           => __( 'Related Posts', 'mdb-theme-blocks' ),
-                'description'     => __( 'Shows the related posts.', 'mdb-theme-blocks' ),
-                'render_callback' => 'mdb_theme_blocks\render_block_related_posts',
-            )
-        );
-    }
-
-    add_action( 'init', 'mdb_theme_blocks\register_block_related_posts' );
-
-endif;
+add_action( 'init', 'mdb_theme_blocks\register_block_related_posts' );

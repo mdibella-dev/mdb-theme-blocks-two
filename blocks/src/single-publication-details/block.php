@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) or exit;
 * @return string The dynamically rendered block output.
  */
 
-function render_block_single_publication_details( $attributes, $content, $block )
+function render_block__single_publication_details( $attributes, $content, $block )
 {
     if( ! isset( $block->context['postId'] ) or ! api_is_publication( $block->context['postId'] ) ) :
         return '';
@@ -239,24 +239,20 @@ function render_block_single_publication_details( $attributes, $content, $block 
 
 
 
-if( function_exists( 'register_block_type' ) ) :
+/**
+ * Registers the block.
+ */
 
-    /**
-     * Registers the block.
-     */
+function register_block_single__publication_details()
+{
+    register_block_type(
+        __DIR__,
+        array(
+            'title'           => __( 'Publication Details', 'mdb-theme-blocks' ),
+            'description'     => __( 'Shows the details of a single publication.', 'mdb-theme-blocks' ),
+            'render_callback' => 'mdb_theme_blocks\render_block__single_publication_details',
+        )
+    );
+}
 
-    function register_block_single_publication_details()
-    {
-        register_block_type(
-            __DIR__,
-            array(
-                'title'           => __( 'Publication Details', 'mdb-theme-blocks' ),
-                'description'     => __( 'Shows the details of a single publication.', 'mdb-theme-blocks' ),
-                'render_callback' => 'mdb_theme_blocks\render_block_single_publication_details',
-            )
-        );
-    }
-
-    add_action( 'init', 'mdb_theme_blocks\register_block_single_publication_details' );
-
-endif;
+add_action( 'init', 'mdb_theme_blocks\register_block__single_publication_details' );
