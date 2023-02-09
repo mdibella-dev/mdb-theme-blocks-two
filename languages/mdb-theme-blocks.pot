@@ -2,161 +2,148 @@
 # This file is distributed under the same license as the Marco Di Bella &mdash; Block Collection (mdb-theme-fse) plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Marco Di Bella &mdash; Block Collection (mdb-theme-fse) "
-"1.1.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mdb-theme-blocks-"
-"two\n"
-"POT-Creation-Date: 2023-02-09T17:57:08+00:00\n"
-"PO-Revision-Date: 2023-02-09 19:06+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: de_DE\n"
+"Project-Id-Version: Marco Di Bella &mdash; Block Collection (mdb-theme-fse) 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mdb-theme-blocks-two\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"POT-Creation-Date: 2023-02-09T17:57:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: mdb-theme-blocks\n"
 
 #. Plugin Name of the plugin
 msgid "Marco Di Bella &mdash; Block Collection (mdb-theme-fse)"
-msgstr "Marco Di Bella &mdash; Blockkollektion (mdb-theme-fse)"
+msgstr ""
 
 #. Plugin URI of the plugin
 msgid "https://github.com/mdibella-dev/mdb-theme-blocks-two"
-msgstr "https://github.com/mdibella-dev/mdb-theme-blocks-two"
+msgstr ""
 
 #. Description of the plugin
-msgid ""
-"This plugin adds custom blocks to the Gutenberg editor for use in Marco Di "
-"Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement of "
-"mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0)."
+msgid "This plugin adds custom blocks to the Gutenberg editor for use in Marco Di Bella's personal WordPress theme (mdb-theme-fse). Basically a replacement of mdb-theme-blocks (1.2.0) and mdb-theme-ajax (1.1.0)."
 msgstr ""
-"Dieses Plugin fügt dem Gutenberg-Editor benutzerdefinierte Blöcke zur "
-"Verwendung in Marco Di Bellas persönlichem WordPress-Theme (mdb-theme-fse) "
-"hinzu. Im Grunde ein Ersatz für mdb-theme-blocks (1.2.0) und mdb-theme-ajax "
-"(1.1.0)."
 
 #. Author of the plugin
 msgid "Marco Di Bella"
-msgstr "Marco Di Bella"
+msgstr ""
 
 #. Author URI of the plugin
 msgid "https://www.marcodibella.de"
-msgstr "https://www.marcodibella.de"
+msgstr ""
 
 #: blocks/src/post-terms-archive/block.php:40
 msgid "Term"
-msgstr "Schlagwort"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:104
 msgid "Authors"
-msgstr "Autoren"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:104
 msgid "Author"
-msgstr "Autor"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:123
 msgid "Abstract"
-msgstr "Auszug"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:142
 msgid "Citation"
-msgstr "Zitation"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:167
 msgid "Is citated in"
-msgstr "Wurde zitiert in"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:192
 msgid "Keywords"
-msgstr "Schlagwörter"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:213
 msgid "citation suggestion"
-msgstr "Zitationsvorschlag"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.php:217
 msgid "Generate RIS file"
-msgstr "RIS-Datei erstellen"
+msgstr ""
 
 #: includes/block-categories.php:36
 msgid "Marco Di Bella's theme"
-msgstr "Marco Di Bellas Theme"
+msgstr ""
 
 #: includes/classes/class-ajax-loadmore-publikationsliste.php:116
 msgid "Details"
-msgstr "Details"
+msgstr ""
 
 #: includes/classes/class-ajax-loadmore.php:252
 msgid "Show more"
-msgstr "Mehr anzeigen"
+msgstr ""
 
 #: blocks/src/post-terms-archive/block.js:8
 msgid "Overview of the articles provided with a certain term."
-msgstr "Übersicht von Artikeln, die über ein bestimmtes Schlagwort verfügen."
+msgstr ""
 
 #: blocks/src/post-terms/block.js:8
 msgid "Shows the post terms as a button list."
-msgstr "Zeigt die Schlagworte eines Beitrags in Form einer Schaltflächenliste."
+msgstr ""
 
 #: blocks/src/related-posts/block.js:8
 msgid "Shows the related posts."
-msgstr "Zeigt ähnliche Beiträge an."
+msgstr ""
 
 #: blocks/src/single-publication-details/block.js:8
 msgid "Shows the details of a single publication."
-msgstr "Zeigt die Details einer bestimmten Publikation an."
+msgstr ""
 
 #: blocks/src/download-container/block.json
 msgctxt "block title"
 msgid "Download Container"
-msgstr "Download-Container"
+msgstr ""
 
 #: blocks/src/download-container/block.json
 msgctxt "block description"
 msgid "A container element for providing downloads."
-msgstr "Ein Containerelement zum Bereitstellen von Downloads."
+msgstr ""
 
 #: blocks/src/post-terms-archive/block.json
 msgctxt "block title"
 msgid "Tags Archive"
-msgstr "Schlagwortarchiv"
+msgstr ""
 
 #: blocks/src/post-terms-archive/block.json
 msgctxt "block description"
 msgid "Lists all articles that are tagged with a specific keyword."
 msgstr ""
-"Listet alle Artikel auf, die mit einem bestimmten Schlüsselwort "
-"gekennzeichnet sind."
 
 #: blocks/src/post-terms/block.json
 msgctxt "block title"
 msgid "Article Tags Navigation"
-msgstr "Schaltflächenliste mit Schlagworte"
+msgstr ""
 
 #: blocks/src/post-terms/block.json
 msgctxt "block description"
 msgid "Creates a button navigation with the post tags."
-msgstr "Erstellt eine Schaltflächennavigation mit den Post-Tags."
+msgstr ""
 
 #: blocks/src/related-posts/block.json
 msgctxt "block title"
 msgid "Related Posts"
-msgstr "Ähnliche Beiträge"
+msgstr ""
 
 #: blocks/src/related-posts/block.json
 msgctxt "block description"
 msgid "Shows the related posts."
-msgstr "Zeigt ähnliche Beiträge an."
+msgstr ""
 
 #: blocks/src/single-publication-details/block.json
 msgctxt "block title"
 msgid "Publication Details"
-msgstr "Publikationsdetails"
+msgstr ""
 
 #: blocks/src/single-publication-details/block.json
 msgctxt "block description"
 msgid "Shows the details of a single publication."
-msgstr "Zeigt die Details einer bestimmten Publikation an."
+msgstr ""
