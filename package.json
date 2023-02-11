@@ -1,5 +1,5 @@
 {
-    "name": "blocks-lab",
+    "name": "mdb-theme-blocks-two",
     "description": "Marco Di Bella's Block Collection (mdb-theme-fse)",
     "scripts": {
         "build": "wp-scripts build --webpack-copy-php",
