@@ -67,7 +67,7 @@ add_action( 'init', 'mdb_theme_blocks\plugin_init' );
  * @since 1.0.0
  */
 
-function enqueue_scripts()
+function enqueue_plugin_scripts()
 {
     wp_enqueue_script(
         'ajax',
@@ -84,4 +84,4 @@ function enqueue_scripts()
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'mdb_theme_blocks\enqueue_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', 'mdb_theme_blocks\enqueue_plugin_scripts', 9999 );
