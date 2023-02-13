@@ -243,7 +243,7 @@ function render_block__single_publication_details( $attributes, $content, $block
  * Registers the block.
  */
 
-function register_block_single__publication_details()
+function register_block__single_publication_details()
 {
     if( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-single-publication-details-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );

@@ -99,4 +99,4 @@ function register_block__related_posts()
     );
 }
 
-add_action( 'init', 'mdb_theme_blocks\register_block_related_posts' );
+add_action( 'init', 'mdb_theme_blocks\register_block__related_posts' );
