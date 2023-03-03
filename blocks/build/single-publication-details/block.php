@@ -226,7 +226,7 @@ function render_block__single_publication_details( $attributes, $content, $block
 
 
     // Combine all sections
-    $output = implode( '<hr class="wp-block-separator">', $section );
+    $output = implode( '', $section );
 
 
     // Improve typography (when plugin wp-typography is loaded)
