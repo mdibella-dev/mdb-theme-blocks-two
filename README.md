@@ -15,6 +15,7 @@ __Tested up to:__ WordPress 6.1
 
 
 ### main
+* New: Add patch to fix the path to Gutenberg related localized script files (backport from blocks-lab).
 * New: package.json
 * New: Add wp_set_script_translations() support.
 * New: Adapt block file inclusion process from blocks-lab project.
