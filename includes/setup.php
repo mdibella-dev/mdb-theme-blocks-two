@@ -71,7 +71,7 @@ function enqueue_plugin_scripts()
 {
     wp_enqueue_script(
         'ajax',
-        plugins_url( 'assets/build/js/ajax-loadmore.min.js', PLUGIN_DIR ),
+        PLUGIN_URL . 'assets/build/js/ajax-loadmore.min.js',
         'jquery',
         PLUGIN_VERSION,
         true

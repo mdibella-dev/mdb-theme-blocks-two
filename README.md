@@ -21,6 +21,7 @@ __Tested up to:__ WordPress 6.1
 * Improve: Reorganize block related files and folder to match those in blocks-lab project.
 * Improve: Remove check for register_block() on every single block registration.
 * Improve: Create new German translation.
+* Bugfix: File not found error (ajax-loadmore.min.js).
 
 
 ### 1.1.0
