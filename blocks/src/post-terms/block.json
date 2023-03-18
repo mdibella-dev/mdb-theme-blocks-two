@@ -7,7 +7,5 @@
     "icon": "tag",
     "category": "mdb-theme-blocks",
     "textdomain": "mdb-theme-blocks",
-    "example": {},
-    "attributes" : {},
     "editorScript": "file:./block.js"
 }

@@ -1,17 +1,32 @@
-( function( blocks, i18n, element, blockEditor ) {
-    var __ = i18n.__;
-    var el = element.createElement;
+/**
+ * WordPress dependencies
+ */
 
-    blocks.registerBlockType( 'mdb-theme-blocks/post-terms', {
+import { registerBlockType } from '@wordpress/blocks';
+import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
+import ServerSideRender from '@wordpress/server-side-render';
 
-        edit: function() {
-            return el( 'p', '', __( 'Shows the post terms as a button list.', 'mdb-theme-blocks' ) );
-        }
-    } );
 
-} (
-    window.wp.blocks,
-    window.wp.i18n,
-    window.wp.element,
-    window.wp.blockEditor
-) );
+/**
+ * Internal dependencies
+ */
+
+import metadata from './block.json';
+
+
+/**
+ * Register the block.
+ */
+
+registerBlockType( metadata, {
+    edit: ( props ) => {
+        const blockProps = useBlockProps();
+        return (
+            <div { ...blockProps }>
+                <ServerSideRender
+                    block="mdb-theme-blocks/post-terms"
+                />
+            </div>
+        ) },
+} );

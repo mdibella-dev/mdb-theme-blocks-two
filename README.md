@@ -16,9 +16,10 @@ __Tested up to:__ WordPress 6.1
 
 ### main
 * New: Add patch to fix the path to Gutenberg related localized script files (backport from blocks-lab).
-* New: package.json
+* New: Add package.json
 * New: Add wp_set_script_translations() support.
 * New: Adapt block file inclusion process from blocks-lab project.
+* New: Add dynamic preview of post-terms in block editor.
 * Improve: Reorganize block related files and folder to match those in blocks-lab project.
 * Improve: Remove check for register_block() on every single block registration.
 * Improve: Create new German translation.
