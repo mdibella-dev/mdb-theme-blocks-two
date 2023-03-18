@@ -37,8 +37,6 @@ function render_block__post_terms_archive( $attributes, $content, $block )
     ob_start();
 
     ?>
-<h1 class="wp-block-post-title has-text-align-center no-margin-bottom"><span><?php echo __( 'Term', 'mdb-theme-blocks' ) ?></span><span><?php echo single_tag_title( '', false ); ?></span></h1>
-<div class="wp-block-spacer is-style-auto"></div>
 <?php echo do_shortcode( sprintf( '[teaserblock paged="true" tag="%1$s"]', get_query_var( 'tag_id' ) ) ); ?>
 <?php
 
