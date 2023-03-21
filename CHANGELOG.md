@@ -17,7 +17,6 @@ Released: 04-02-2023
 * Bugfix: Blocks: Fix schema path
 * Bugfix: Blocks: Use translation for title and description
 
-<br>
 
 ### 1.0.1
 Released: 04-01-2023
@@ -28,7 +27,6 @@ Released: 04-01-2023
 * Bugfix: Namespace in plugin.php
 * Bugfix: Translation not loaded (#1)
 
-<br>
 
 ### 1.0.0
 Released: 12-11-2022
