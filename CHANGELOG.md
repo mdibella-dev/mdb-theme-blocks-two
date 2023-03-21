@@ -4,7 +4,7 @@
 
 <br>
 
-## 1.1.0
+### 1.1.0
 Released: 04-02-2023
 
 * Improve: Documentation style
@@ -19,7 +19,7 @@ Released: 04-02-2023
 
 <br>
 
-## 1.0.1
+### 1.0.1
 Released: 04-01-2023
 
 * Improve: Change section generation in single-publication-details
@@ -30,7 +30,7 @@ Released: 04-01-2023
 
 <br>
 
-## 1.0.0
+### 1.0.0
 Released: 12-11-2022
 
 * Initial commit
