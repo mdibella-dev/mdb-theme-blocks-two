@@ -31,6 +31,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 * New: Add wp_set_script_translations() support
 * New: Adapt block file inclusion process from blocks-lab project
 * New: Add dynamic preview of post-terms in block editor (backport from blocks-lab)
+* Improve: Add serverside rendering to block post-terms (#3)
 * Improve: Reorganize block related files and folder to match those in blocks-lab project
 * Improve: Remove check for register_block() on every single block registration
 * Improve: Create new German translation
