@@ -6,7 +6,7 @@ This plugin adds custom blocks to the Gutenberg editor for the use in Marco Di B
 ## Development Info
 
 ### Contributors
-[Marco Di Bella ](https://github.com/mdibella-dev)
+[Marco Di Bella](https://github.com/mdibella-dev)
 
 ### Tags
 gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, ajax, custom-post-type-support
@@ -25,18 +25,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 ### Latest changes to the main branch
 
-* New: Extract changelog from README.md
-* New: Add patch to fix the path to Gutenberg related localized script files (backport from blocks-lab)
-* New: Add package.json
-* New: Add wp_set_script_translations() support
-* New: Adapt block file inclusion process from blocks-lab project
-* New: Add dynamic preview of post-terms in block editor (backport from blocks-lab)
-* Improve: Add serverside rendering to block post-terms (#3)
-* Improve: Reorganize block related files and folder to match those in blocks-lab project
-* Improve: Remove check for register_block() on every single block registration
-* Improve: Create new German translation
-* Improve: Remove title in post-terms-archive
-* Bugfix: File not found error (ajax-loadmore.min.js)
+* -
 
 
 ### Previous changes
