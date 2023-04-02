@@ -17,7 +17,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 ### Tested up to
 
-* WordPress 6.2 RC2
+* WordPress 6.2
 
 <br>
 
