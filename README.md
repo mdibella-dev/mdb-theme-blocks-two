@@ -25,7 +25,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 ### Latest changes to the main branch
 
-* -
+* Improve: Remove support for download-container
 
 
 ### Previous changes
