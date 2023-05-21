@@ -11,4 +11,5 @@ return array(
     'post-terms-archive',
     'related-posts',
     'single-publication-details',
+    'section-separator',
 );
