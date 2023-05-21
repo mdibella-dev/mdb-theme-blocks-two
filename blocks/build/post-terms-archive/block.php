@@ -36,7 +36,7 @@ function render_block__post_terms_archive( $attributes, $content, $block )
 
     ob_start();
 
-    ?>
+?>
 <?php echo do_shortcode( sprintf( '[teaserblock paged="true" tag="%1$s"]', get_query_var( 'tag_id' ) ) ); ?>
 <?php
 
