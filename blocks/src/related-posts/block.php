@@ -69,9 +69,9 @@ function render_block__related_posts( $attributes, $content, $block )
 
     ob_start();
 
-?>
-<?php echo do_shortcode( $shortcode ); ?>
-<?php
+    ?>
+    <?php echo do_shortcode( $shortcode ); ?>
+    <?php
 
     $output = ob_get_contents();
     ob_end_clean();

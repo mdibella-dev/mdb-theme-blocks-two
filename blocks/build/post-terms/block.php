@@ -39,24 +39,24 @@ function render_block__post_terms( $attributes, $content, $block )
 
     ob_start();
 
-?>
-<nav class="tags" aria-hidden="true">
-    <ul>
-        <?php
-        foreach( $tags as $tag ) :
-        ?>
-        <li>
-            <a class="button button-tag"
-               href="<?php echo get_tag_link( $tag->term_id ); ?>"
-               rel="tag"
-               target="_self"><?php echo trim($tag->name); ?></a>
-        </li>
-        <?php
-        endforeach;
-        ?>
-    </ul>
-</nav>
-<?php
+    ?>
+    <nav class="tags" aria-hidden="true">
+        <ul>
+            <?php
+            foreach( $tags as $tag ) :
+            ?>
+            <li>
+                <a class="button button-tag"
+                   href="<?php echo get_tag_link( $tag->term_id ); ?>"
+                   rel="tag"
+                   target="_self"><?php echo trim($tag->name); ?></a>
+            </li>
+            <?php
+            endforeach;
+            ?>
+        </ul>
+    </nav>
+    <?php
 
     $output = ob_get_contents();
     ob_end_clean();
