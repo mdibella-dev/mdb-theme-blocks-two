@@ -1,17 +1,17 @@
-.mdb-theme-blocks-section-separator {
+.wp-block-mdb-theme-blocks-section-separator {
     text-align: center;
-    padding: 5rem;
+    padding: 5rem !important;
     color: #fff;
 }
 
 
-.mdb-theme-blocks-section-separator svg {
+.wp-block-mdb-theme-blocks-section-separator svg {
     width: 2.5rem;
     fill: currentcolor;
 }
 
 
-.mdb-theme-blocks-section-separator .line {
+.wp-block-mdb-theme-blocks-section-separator .line {
     fill: none;
     stroke: currentcolor;
     stroke-width: 24;
