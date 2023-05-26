@@ -25,7 +25,6 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 ### Latest changes to the main branch
 
-* New: Add block section-separator
 * Improve: Remove support for download-container
 
 
