@@ -16,6 +16,6 @@
     </div>
     <div class="vortrag-description">
         <p>Vortrag "_TITLE_" in _LOCATION_.</p>
-        <p>_DESCRIPTION_.</p>
+        <p class="small">_DESCRIPTION_.</p>
     </div>
 </div>
