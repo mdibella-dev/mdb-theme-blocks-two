@@ -16,7 +16,7 @@
             <p class="small">_PUBCITE_</p>
         </div>
         <div>
-            <a href="_LINK_" data-pubid="_ID_" data-action="pubdetails" target="_self">_DETAILS_</a>
+            <p><a href="_LINK_" data-pubid="_ID_" data-action="pubdetails" target="_self">_DETAILS_</a></p>
         </div>
     </div>
 </div>
