@@ -24,9 +24,9 @@ defined( 'ABSPATH' ) or exit;
 *
 * @since  1.0.0
 *
-* @param array $attributes Block attributes.
-* @param string $content   Block default content.
-* @param string $block     Block instance.
+* @param array  $attributes Block attributes.
+* @param string $content    Block default content.
+* @param string $block      Block instance.
 *
 * @return string The dynamically rendered block output.
  */
