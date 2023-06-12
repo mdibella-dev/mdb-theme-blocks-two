@@ -27,6 +27,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 * Improve: Remove support for download-container
 * Improve: Replace self made buttons with Gutenberg's buttons in post-terms
+* Bugfix: Add p tag to publikationsliste to fox font issues
 
 
 ### Previous changes
