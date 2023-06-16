@@ -29,7 +29,7 @@ jQuery( document ).ready( function( $ ) {
                 lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-spinner' ).show();
             },
             complete: function( jqXHR ) {
-                lm.children( '.loadmore-content' ).append( jqXHR.responseText );
+                lm.children( '.loadmore-content-wrapper' ).find( '.loadmore-content' ).append( jqXHR.responseText );
                 lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-spinner' ).hide();
 
                 nextpage = lm.data( 'nextpage' );
