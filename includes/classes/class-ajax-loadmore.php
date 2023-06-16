@@ -233,8 +233,10 @@ abstract class AJAX_LoadMore
 
             ?>
             <div id="<?php echo $params['id']; ?>" class="loadmore <?php echo $params['action']; ?>" <?php echo $data; ?>>
-            <div class="loadmore-content">
-                <?php echo $ajax; ?>
+            <div class="loadmore-content-wrapper">
+                <div class="loadmore-content">
+                    <?php echo $ajax; ?>
+                </div>
             </div>
             <?php
             // Show LoadMore button if required
