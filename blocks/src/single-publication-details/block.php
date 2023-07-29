@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) or exit;
 
 function render_block__single_publication_details( $attributes, $content, $block )
 {
-    if( ! isset( $block->context['postId'] ) or ! publication\publication( $block->context['postId'] ) ) :
+    if( ! isset( $block->context['postId'] ) or ! publication\is_publication( $block->context['postId'] ) ) :
         return '';
     endif;
 

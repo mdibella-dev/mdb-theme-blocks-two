@@ -8,6 +8,8 @@
 
 namespace mdb_theme_blocks;
 
+use mdb_theme_core\api as publication;
+
 
 /** Prevent direct access */
 
@@ -107,7 +109,7 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
 
     static function get_replacements( $post )
     {
-        $part = \mdb_theme_core\publication__build_citation( $post->ID, MDB_BUILD_ARRAY );
+        $part = publication\build_citation( $post->ID, MDB_BUILD_ARRAY );
 
         // Create replacement terms
         $replacements = array(
