@@ -23,8 +23,8 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
-{
+class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore {
+
     /**
      * HTML template for dynamic output.
      *
@@ -36,18 +36,15 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
     private static $template = '';
 
 
-
     /**
      * A (static) constructor; sets the basic class parameters.
      *
      * @since 1.0.0
      */
 
-    static function __constructStatic()
-    {
+    static function __constructStatic() {
         self::$template = self::prepare_template( 'ajax-template-publikationsliste' );
     }
-
 
 
     /**
@@ -58,11 +55,9 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
      * @return string The HTML template.
      */
 
-    static function get_template()
-    {
+    static function get_template() {
         return self::$template;
     }
-
 
 
     /**
@@ -75,26 +70,24 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
      * @return array An array of matching WP_POST objects.
      */
 
-    static function get_posts( $params )
-    {
-        $tax_query     = array(
+    static function get_posts( $params ) {
+        $tax_query     = [
             'taxonomy' => 'publication_group',
             'terms'    => explode( ',', $params['form'] )
-        );
+        ];
 
-        $posts = get_posts( array(
+        $posts = get_posts( [
             'post_type'      => 'publication',
             'post_status'    => 'publish',
             'posts_per_page' => $params['show'],
             'order'          => 'DESC',
             'orderby'        => $params['orderby'],
-            'tax_query'      => array( $tax_query ),
+            'tax_query'      => [ $tax_query ],
             'offset'         => ($params['nextpage'] - 1) * $params['show'],
-        ) );
+        ] );
 
         return $posts;
     }
-
 
 
     /**
@@ -107,22 +100,20 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
      * @return array An associative array containing the replacement terms.
      */
 
-    static function get_replacements( $post )
-    {
+    static function get_replacements( $post ) {
         $part = publication\build_citation( $post->ID, MDB_BUILD_ARRAY );
 
         // Create replacement terms
-        $replacements = array(
+        $replacements = [
             '_PUBTITLE_'     => $part[0],
             '_PUBCITE_'      => $part[1],
             '_DETAILS_'      => __( 'Details', 'mdb-theme-blocks' ),
             '_ID_'           => $post->ID,
             '_LINK_'         => get_permalink( $post->ID ),
-        );
+        ];
 
         return $replacements;
     }
-
 
 
     /**
@@ -133,9 +124,9 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
      * @return array An associative array with LoadMore default parameters and values.
      */
 
-    static function get_default_params()
-    {
-        $default = array(
+    static function get_default_params() {
+
+        $default = [
             'paged'    => 'false',
             'show'     => '',
             'exclude'  => '',
@@ -145,14 +136,14 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore
             'maxpage'  => 1,
             'nextpage' => 1,
             'form'     => '',          // publication form!
-        );
+        ];
 
         return $default;
     }
 }
 
-add_action( 'wp_ajax_publikationsliste', array( 'mdb_theme_blocks\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
-add_action( 'wp_ajax_nopriv_publikationsliste', array( 'mdb_theme_blocks\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ) );
+add_action( 'wp_ajax_publikationsliste', [ 'mdb_theme_blocks\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ] );
+add_action( 'wp_ajax_nopriv_publikationsliste', [ 'mdb_theme_blocks\AJAX_LoadMore_Publikationsliste', 'handle_AJAX' ] );
 
 
 AJAX_LoadMore_Publikationsliste::__constructStatic();

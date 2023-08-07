@@ -26,16 +26,15 @@ defined( 'ABSPATH' ) or exit;
  * @return array Array with all block categories (modified).
  */
 
-function add_block_categories( $block_categories, $block_editor_context )
-{
+function add_block_categories( $block_categories, $block_editor_context ) {
     return array_merge(
         $block_categories,
-        array(
-            array(
+        [
+            [
                 'slug'  => 'mdb-theme-blocks',
                 'title' => __( "Marco Di Bella's theme", 'mdb-theme-blocks' ),
-            ),
-        )
+            ],
+        ]
     );
 }
 

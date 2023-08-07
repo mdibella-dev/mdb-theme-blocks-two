@@ -26,31 +26,33 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output.
  */
 
-function shortcode_vortragsliste( $atts, $content = null )
-{
+function shortcode_vortragsliste( $atts, $content = null ) {
     // Set variables
     $output = '';
-    $params = array();
+    $params = [];
 
 
     // Read parameters
-    extract( shortcode_atts( array(
-        'paged'   => 'false',
-        'show'    => '',
-        'orderby' => 'publish_date',
-        ),
+    extract( shortcode_atts(
+        [
+            'paged'   => 'false',
+            'show'    => '',
+            'orderby' => 'publish_date',
+        ],
         $atts
     ) );
 
 
     // Get the total number of items
-    $max = sizeof( get_posts( array(
-        'post_type'      => 'lecture',
-        'post_status'    => 'publish',
-        'posts_per_page' => -1,
-        'order'          => 'DESC',
-        'orderby'        => $orderby,
-    ) ) );
+    $max = sizeof( get_posts(
+        [
+            'post_type'      => 'lecture',
+            'post_status'    => 'publish',
+            'posts_per_page' => -1,
+            'order'          => 'DESC',
+            'orderby'        => $orderby,
+        ]
+    ) );
 
 
     // Set LoadMore parameters

@@ -21,8 +21,8 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
-{
+class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore {
+
     /**
      * HTML template for dynamic output.
      *
@@ -34,18 +34,15 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
     private static $template = '';
 
 
-
     /**
      * A (static) constructor; sets the basic class parameters.
      *
      * @since 1.0.0
      */
 
-    static function __constructStatic()
-    {
+    static function __constructStatic() {
         self::$template = self::prepare_template( 'ajax-template-teaserblock' );
     }
-
 
 
     /**
@@ -56,11 +53,9 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
      * @return string The HTML template.
      */
 
-    static function get_template()
-    {
+    static function get_template() {
         return self::$template;
     }
-
 
 
     /**
@@ -73,9 +68,9 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
      * @return array An array of matching WP_POST objects.
      */
 
-    static function get_posts( $params )
-    {
-        $posts = get_posts( array(
+    static function get_posts( $params ) {
+
+        $posts = get_posts( [
             'post_type'      => 'post',
             'post_status'    => 'publish',
             'posts_per_page' => $params['show'],
@@ -85,11 +80,10 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
             'exclude'        => $params['exclude'],
             'cat'            => $params['cat'],
             'tag_id'         => $params['tag'],
-        ) );
+        ] );
 
         return $posts;
     }
-
 
 
     /**
@@ -102,22 +96,21 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore
      * @return array An associative array containing the replacement terms.
      */
 
-    static function get_replacements( $post )
-    {
+    static function get_replacements( $post ) {
         // Create replacement terms
-        $replacements = array(
+        $replacements = [
             '_CLASS_'     => implode( ' ', apply_filters( 'post_class', get_post_class( $post->ID ), '', $post->ID ) ),
             '_PERMALINK_' => get_permalink( $post->ID ),
             '_IMAGE_'     => get_the_post_thumbnail( $post->ID, 'medium' ),
             '_TITLE_'     => get_the_title( $post->ID ),
-        );
+        ];
 
         return $replacements;
     }
 }
 
-add_action( 'wp_ajax_teaserblock', array( 'mdb_theme_blocks\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ) );
-add_action( 'wp_ajax_nopriv_teaserblock', array( 'mdb_theme_blocks\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ) );
+add_action( 'wp_ajax_teaserblock', [ 'mdb_theme_blocks\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ] );
+add_action( 'wp_ajax_nopriv_teaserblock', [ 'mdb_theme_blocks\AJAX_LoadMore_Teaserblock', 'handle_AJAX' ] );
 
 
 AJAX_LoadMore_Teaserblock::__constructStatic();

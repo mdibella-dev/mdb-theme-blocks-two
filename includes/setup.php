@@ -21,8 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function plugin_activation()
-{
+function plugin_activation() {
     // Do something!
 }
 
@@ -36,8 +35,7 @@ register_activation_hook( __FILE__, 'mdb_theme_blocks\plugin_activation' );
  * @since 1.0.0
  */
 
-function plugin_deactivation()
-{
+function plugin_deactivation() {
     // Do something!
 }
 
@@ -51,8 +49,7 @@ register_deactivation_hook( __FILE__, 'mdb_theme_blocks\plugin_deactivation' );
  * @since 1.0.0
  */
 
-function plugin_init()
-{
+function plugin_init() {
     // Load text domain, use relative path to the plugin's language folder
     load_plugin_textdomain( 'mdb-theme-blocks', false, plugin_basename( PLUGIN_DIR ) . '/languages' );
 }
@@ -67,12 +64,14 @@ add_action( 'init', 'mdb_theme_blocks\plugin_init' );
  * @since 1.0.0
  */
 
-function enqueue_plugin_scripts()
-{
+function enqueue_plugin_scripts() {
+
     wp_enqueue_script(
         'ajax',
         PLUGIN_URL . 'assets/build/js/ajax-loadmore.min.js',
-        'jquery',
+        [ 
+            'jquery'
+        ],
         PLUGIN_VERSION,
         true
     );

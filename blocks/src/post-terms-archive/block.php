@@ -28,8 +28,8 @@ defined( 'ABSPATH' ) or exit;
 
  */
 
-function render_block__post_terms_archive( $attributes, $content, $block )
-{
+function render_block__post_terms_archive( $attributes, $content, $block ) {
+
     if( ! isset( $block->context['postId'] ) ) :
         return '';
     endif;
@@ -52,17 +52,17 @@ function render_block__post_terms_archive( $attributes, $content, $block )
  * Registers the block.
  */
 
-function register_block__post_terms_archive()
-{
+function register_block__post_terms_archive() {
+
     if( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-post-terms-archive-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
     endif;
 
     register_block_type_from_metadata(
         __DIR__,
-        array(
+        [
             'render_callback' => 'mdb_theme_blocks\render_block__post_terms_archive',
-        )
+        ]
     );
 }
 

@@ -26,37 +26,39 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output.
  */
 
-function shortcode_teaserblock( $atts, $content = null )
-{
+function shortcode_teaserblock( $atts, $content = null ) {
     // Set variables
     $output = '';
-    $params = array();
+    $params = [];
 
 
     // Read parameters
-    extract( shortcode_atts( array(
-        'paged'   => 'false',
-        'show'    => '4',
-        'exclude' => '',
-        'orderby' => 'publish_date',
-        'cat'     => 0,
-        'tag'     => 0,
-        ),
+    extract( shortcode_atts(
+        [
+            'paged'   => 'false',
+            'show'    => '4',
+            'exclude' => '',
+            'orderby' => 'publish_date',
+            'cat'     => 0,
+            'tag'     => 0,
+        ],
         $atts
     ) );
 
 
     // Get the total number of items
-    $max = sizeof( get_posts( array(
-        'post_type'      => 'post',
-        'post_status'    => 'publish',
-        'posts_per_page' => -1,
-        'order'          => 'DESC',
-        'orderby'        => $orderby,
-        'exclude'        => $exclude,
-        'cat'            => $cat,
-        'tag_id'         => $tag,
-    ) ) );
+    $max = sizeof( get_posts(
+        [
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'posts_per_page' => -1,
+            'order'          => 'DESC',
+            'orderby'        => $orderby,
+            'exclude'        => $exclude,
+            'cat'            => $cat,
+            'tag_id'         => $tag,
+        ]
+    ) );
 
 
     // Set LoadMore parameters

@@ -29,14 +29,13 @@ defined( 'ABSPATH' ) or exit;
 * @return string The dynamically rendered block output.
  */
 
-function render_block__single_publication_details( $attributes, $content, $block )
-{
+function render_block__single_publication_details( $attributes, $content, $block ) {
     if( ! isset( $block->context['postId'] ) or ! publication\is_publication( $block->context['postId'] ) ) :
         return '';
     endif;
 
     $data    = publication\get_data( $block->context['postId'] );
-    $section = array();
+    $section = [];
 
 
     /** Section: Cover & Title */
@@ -88,7 +87,7 @@ function render_block__single_publication_details( $attributes, $content, $block
 
     if( ! empty( $data['authors'] ) ) :
         $count   = 0;
-        $authors = array();
+        $authors = [];
 
         foreach( $data['authors'] as $author ) :
             $authors[] .= $author['au_firstname'] . ' ' . $author['au_lastname'];
@@ -241,17 +240,17 @@ function render_block__single_publication_details( $attributes, $content, $block
  * Registers the block.
  */
 
-function register_block__single_publication_details()
-{
+function register_block__single_publication_details() {
+
     if( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-single-publication-details-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
     endif;
 
     register_block_type_from_metadata(
         __DIR__,
-        array(
+        [
             'render_callback' => 'mdb_theme_blocks\render_block__single_publication_details',
-        )
+        ]
     );
 }
 

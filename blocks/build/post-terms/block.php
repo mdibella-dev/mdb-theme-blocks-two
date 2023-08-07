@@ -27,8 +27,7 @@ defined( 'ABSPATH' ) or exit;
  * @return string The dynamically rendered block output.
  */
 
-function render_block__post_terms( $attributes, $content, $block )
-{
+function render_block__post_terms( $attributes, $content, $block ) {
     global $post;
 
     $tags = get_the_tags( $post->ID );
@@ -68,17 +67,17 @@ function render_block__post_terms( $attributes, $content, $block )
  * Registers the block.
  */
 
-function register_block__post_terms()
-{
+function register_block__post_terms() {
+
     if( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-post-terms-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
     endif;
 
     register_block_type_from_metadata(
         __DIR__,
-        array(
+        [
             'render_callback' => 'mdb_theme_blocks\render_block__post_terms',
-        )
+        ]
     );
 }
 

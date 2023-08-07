@@ -26,38 +26,40 @@ defined( 'ABSPATH' ) or exit;
  * @return string The output.
  */
 
-function shortcode_publikationsliste( $atts, $content = null )
-{
+function shortcode_publikationsliste( $atts, $content = null ) {
     // Set variables
     $output = '';
-    $params = array();
+    $params = [];
 
 
     // Read parameters
-    extract( shortcode_atts( array(
-        'paged'   => 'false',
-        'show'    => '',
-        'orderby' => 'publish_date',
-        'form'    => '',
-        ),
+    extract( shortcode_atts(
+        [
+            'paged'   => 'false',
+            'show'    => '',
+            'orderby' => 'publish_date',
+            'form'    => '',
+        ],
         $atts
-    ) );
+     ) );
 
 
     // Get the total number of items
-    $tax_query = array(
+    $tax_query = [
         'taxonomy' => 'publication_group',
         'terms'    => explode( ',', $form )
-    );
+    ];
 
-    $max = sizeof( get_posts( array(
-        'post_type'      => 'publication',
-        'post_status'    => 'publish',
-        'posts_per_page' => -1,
-        'order'          => 'DESC',
-        'orderby'        => $orderby,
-        'tax_query'      => array( $tax_query )
-    ) ) );
+    $max = sizeof( get_posts(
+        [
+            'post_type'      => 'publication',
+            'post_status'    => 'publish',
+            'posts_per_page' => -1,
+            'order'          => 'DESC',
+            'orderby'        => $orderby,
+            'tax_query'      => [ $tax_query ]
+        ]
+    ) );
 
 
     // Set LoadMore parameters

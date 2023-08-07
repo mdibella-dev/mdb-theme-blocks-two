@@ -23,8 +23,8 @@ defined( 'ABSPATH' ) or exit;
  * @todo  Integrate shortcode functionality.
  */
 
-abstract class AJAX_LoadMore
-{
+abstract class AJAX_LoadMore {
+
     /**
      * Reads in the HTML template for dynamic output and returns it for storage.
      *
@@ -35,8 +35,7 @@ abstract class AJAX_LoadMore
      * @return string The template.
      */
 
-    static function prepare_template( $filename )
-    {
+    static function prepare_template( $filename ) {
         $filepath = dirname( plugin_dir_path( __FILE__ ) ) . '/templates/' . $filename . '.php';
         $buffer   = '';
 
@@ -54,7 +53,6 @@ abstract class AJAX_LoadMore
     }
 
 
-
     /**
      * Returns the (saved) HTML template for the dynamic output.
      *
@@ -64,7 +62,6 @@ abstract class AJAX_LoadMore
      */
 
     abstract static function get_template();
-
 
 
     /**
@@ -80,7 +77,6 @@ abstract class AJAX_LoadMore
     abstract static function get_replacements( $post );
 
 
-
     /**
      * Determines the dynamically adding contributions (records).
      *
@@ -94,7 +90,6 @@ abstract class AJAX_LoadMore
     abstract static function get_posts( $params );
 
 
-
     /**
      * Returns an array containing the LoadMore parameters (as key) and their default values ​​(as value).
      *
@@ -103,9 +98,9 @@ abstract class AJAX_LoadMore
      * @return array An associative array containing the replacement terms.
      */
 
-    static function get_default_params()
-    {
-        $default = array(
+    static function get_default_params() {
+
+        $default = [
             'paged'    => 'false',
             'show'     => '',
             'exclude'  => '',
@@ -114,11 +109,10 @@ abstract class AJAX_LoadMore
             'tag'      => 0,
             'maxpage'  => 1,
             'nextpage' => 1
-        );
+        ];
 
         return $default;
     }
-
 
 
     /**
@@ -131,8 +125,8 @@ abstract class AJAX_LoadMore
      * @return string The output.
      */
 
-    static function render_dynamic_content( $params )
-    {
+    static function render_dynamic_content( $params ) {
+
         $output = '';
         $posts  = static::get_posts( $params );
 
@@ -169,28 +163,23 @@ abstract class AJAX_LoadMore
     }
 
 
-
     /**
      * Determines the LoadMore parameters submitted via $_POST and then calls render_dynamic_content().
      *
      * @since 1.0.0
      */
 
-    static function handle_AJAX()
-    {
+    static function handle_AJAX() {
         $default = static::get_default_params();
-        $params  = array();
+        $params  = [];
 
         foreach( $default as $key => $value ) :
             $params[$key] = $_POST[$key];
         endforeach;
 
-        //$params['page'] = 1 + (int) $params['page'];
-
         echo self::render_dynamic_content( $params );
         die();
     }
-
 
 
     /**
@@ -204,8 +193,7 @@ abstract class AJAX_LoadMore
      * @return string The output.
      */
 
-    static function prepare_output( $params, $ajax )
-    {
+    static function prepare_output( $params, $ajax ) {
         $output = '';
 
 

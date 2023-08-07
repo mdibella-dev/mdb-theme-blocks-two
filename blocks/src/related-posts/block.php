@@ -27,8 +27,8 @@ defined( 'ABSPATH' ) or exit;
  * @return string The dynamically rendered block output.
  */
 
-function render_block__related_posts( $attributes, $content, $block )
-{
+function render_block__related_posts( $attributes, $content, $block ) {
+
     if( ! isset( $block->context['postId'] ) ) :
         return '';
     endif;
@@ -52,11 +52,13 @@ function render_block__related_posts( $attributes, $content, $block )
     $tag_ids = '';
 
     if( $tags ) :
+
         foreach( $tags as $tag ) :
             $tag_id_array[] = $tag->term_taxonomy_id;
         endforeach;
 
         $tag_ids = implode( ',', $tag_id_array );
+
     endif;
 
 
@@ -85,17 +87,17 @@ function render_block__related_posts( $attributes, $content, $block )
  * Registers the block.
  */
 
-function register_block__related_posts()
-{
+function register_block__related_posts() {
+
     if( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-related-posts-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
     endif;
 
     register_block_type_from_metadata(
         __DIR__,
-        array(
+        [
             'render_callback' => 'mdb_theme_blocks\render_block__related_posts',
-        )
+        ]
     );
 }
 
