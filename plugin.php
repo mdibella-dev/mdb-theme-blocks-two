@@ -37,4 +37,4 @@ require_once PLUGIN_DIR . 'includes/block-categories.php';
 require_once PLUGIN_DIR . 'includes/patches.php';
 require_once PLUGIN_DIR . 'includes/setup.php';
 
-require_oncePLUGIN_DIR . 'blocks/index.php';
+require_once PLUGIN_DIR . 'blocks/index.php';
