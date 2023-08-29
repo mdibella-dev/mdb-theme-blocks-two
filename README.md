@@ -27,8 +27,9 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 * Improve: Remove support for download-container ([#6](https://github.com/mdibella-dev/mdb-theme-blocks-two/issues/6))
 * Improve: Replace self made buttons with Gutenberg's buttons in post-terms
-* Improve: Change array notation
-* Improve: Change clamping style
+* Improve: Coding style: Change array notation
+* Improve: Coding style: Change clamping style
+* Improve: Coding style: Remove control structure
 * Bugfix: Add p tag to publikationsliste to fix font issues
 
 
