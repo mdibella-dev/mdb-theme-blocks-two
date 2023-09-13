@@ -16,34 +16,6 @@ defined( 'ABSPATH' ) or exit;
 
 
 /**
- * The activation function for the plugin.
- *
- * @since 1.0.0
- */
-
-function plugin_activation() {
-    // Do something!
-}
-
-register_activation_hook( __FILE__, 'mdb_theme_blocks\plugin_activation' );
-
-
-
-/**
- * The deactivation function for the plugin.
- *
- * @since 1.0.0
- */
-
-function plugin_deactivation() {
-    // Do something!
-}
-
-register_deactivation_hook( __FILE__, 'mdb_theme_blocks\plugin_deactivation' );
-
-
-
-/**
  * The init function for the plugin.
  *
  * @since 1.0.0
@@ -69,7 +41,7 @@ function enqueue_plugin_scripts() {
     wp_enqueue_script(
         'ajax',
         PLUGIN_URL . 'assets/build/js/ajax-loadmore.min.js',
-        [ 
+        [
             'jquery'
         ],
         PLUGIN_VERSION,
