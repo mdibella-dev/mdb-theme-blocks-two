@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) or exit;
 
 function render_block__related_posts( $attributes, $content, $block ) {
 
-    if( ! isset( $block->context['postId'] ) ) :
+    if ( ! isset( $block->context['postId'] ) ) :
         return '';
     endif;
 
@@ -38,7 +38,7 @@ function render_block__related_posts( $attributes, $content, $block ) {
     $cats    = get_the_category( $block->context['postId'] );
     $cat_ids = '';
 
-    if( $cats ) :
+    if ( $cats ) :
         foreach( $cats as $cat ) :
             $cat_id_array[] = $cat->term_taxonomy_id;
         endforeach;
@@ -51,9 +51,9 @@ function render_block__related_posts( $attributes, $content, $block ) {
     $tags    = get_the_tags( $block->context['postId'] );
     $tag_ids = '';
 
-    if( $tags ) :
+    if ( $tags ) :
 
-        foreach( $tags as $tag ) :
+        foreach ( $tags as $tag ) :
             $tag_id_array[] = $tag->term_taxonomy_id;
         endforeach;
 
@@ -89,7 +89,7 @@ function render_block__related_posts( $attributes, $content, $block ) {
 
 function register_block__related_posts() {
 
-    if( function_exists( 'wp_set_script_translations' ) ) :
+    if ( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-related-posts-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
     endif;
 

@@ -64,7 +64,7 @@ function shortcode_vortragsliste( $atts, $content = null ) {
     $params['paged']    = strtolower( $paged );
     $params['id']       = sprintf( 'loadmore_%1$s', random_int( 1000, 9999 ) );
 
-    if( 'true' === $params['paged'] ) :
+    if ( 'true' === $params['paged'] ) :
         $params['maxpage'] = (int) ceil( $max / $params['show'] );
     endif;
 

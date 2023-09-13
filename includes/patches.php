@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) or exit;
 
 function fix_translation_location( $file, $handle, $domain ) {
 
-    if( 'mdb-theme-blocks' === $domain ) :
+    if ( 'mdb-theme-blocks' === $domain ) :
         $file = str_replace( WP_LANG_DIR . '/plugins', PLUGIN_DIR . 'languages', $file );
     endif;
 

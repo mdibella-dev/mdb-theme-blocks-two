@@ -32,7 +32,7 @@ function render_block__post_terms( $attributes, $content, $block ) {
 
     $tags = get_the_tags( $post->ID );
 
-    if( ! $tags ) :
+    if ( ! $tags ) :
         return '';
     endif;
 
@@ -41,7 +41,7 @@ function render_block__post_terms( $attributes, $content, $block ) {
     ?>
     <div class="wp-block-buttons is-layout-flex tags " aria-hidden="true">
         <?php
-        foreach( $tags as $tag ) :
+        foreach ( $tags as $tag ) :
         ?>
         <div class="wp-block-button is-style-default">
             <a class="wp-block-button__link wp-element-button"
@@ -69,7 +69,7 @@ function render_block__post_terms( $attributes, $content, $block ) {
 
 function register_block__post_terms() {
 
-    if( function_exists( 'wp_set_script_translations' ) ) :
+    if ( function_exists( 'wp_set_script_translations' ) ) :
         wp_set_script_translations( 'mdb-theme-blocks-post-terms-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
     endif;
 
