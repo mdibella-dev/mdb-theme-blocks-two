@@ -39,7 +39,7 @@ abstract class AJAX_LoadMore {
         $filepath = dirname( plugin_dir_path( __FILE__ ) ) . '/templates/' . $filename . '.php';
         $buffer   = '';
 
-        if( true === file_exists( $filepath ) ) :
+        if ( true === file_exists( $filepath ) ) {
 
             // Read template
             $buffer = file_get_contents( $filepath );
@@ -47,7 +47,7 @@ abstract class AJAX_LoadMore {
             // Remove PHP code and excess spaces
             $buffer = trim( preg_replace( '/<\?php(.*|\n|\r)(\?>)/is', '', $buffer ) );
 
-        endif;
+        }
 
         return $buffer;
     }
@@ -134,10 +134,10 @@ abstract class AJAX_LoadMore {
         $offset = ($params['nextpage'] - 1) * $params['show'];
 
 
-        if( $posts) :
+        if ( $posts) {
 
             // Loop through all posts
-            foreach( $posts as $post ) :
+            foreach ( $posts as $post ) {
                 $buffer       = static::get_template();
                 $replacements = static::get_replacements( $post );
 
@@ -145,19 +145,19 @@ abstract class AJAX_LoadMore {
 
                 foreach( $replacements as $placeholder => $replacement ) :
                     $buffer = str_replace( $placeholder, $replacement, $buffer );
-                endforeach;
+                }
 
                 $count++;
                 $output .= $buffer;
-            endforeach;
+            }
 
 
             // Improve typography (when plugin wp-typography is loaded)
-            if( class_exists( 'WP_Typography' ) ) :
+            if ( class_exists( 'WP_Typography' ) ) {
                 $output = \WP_Typography::process_title( $output );
-            endif;
+            }
 
-        endif;
+        }
 
         return $output;
     }
@@ -175,7 +175,7 @@ abstract class AJAX_LoadMore {
 
         foreach( $default as $key => $value ) :
             $params[$key] = $_POST[$key];
-        endforeach;
+        }
 
         echo self::render_dynamic_content( $params );
         die();
@@ -197,23 +197,23 @@ abstract class AJAX_LoadMore {
         $output = '';
 
 
-        if( ! empty( $ajax ) ) :
+        if ( ! empty( $ajax ) ) {
 
             // Correct information for the following page
-            if( ( 'true' === $params['paged'] ) and ( 1 !== $params['maxpage'] ) ):
+            if ( ( 'true' === $params['paged'] ) and ( 1 !== $params['maxpage'] ) ) {
                 $params['nextpage'] = 2;
-            endif;
+            }
 
             // Generate 'data' values
             $data = '';
 
-            foreach( $params as $data_key => $data_value ) :
+            foreach ( $params as $data_key => $data_value ) {
                 $data .= sprintf(
                     ' data-%1$s="%2$s"',
                     $data_key,
                     $data_value
                 );
-            endforeach;
+            }
 
 
             // Start rendering
@@ -228,7 +228,7 @@ abstract class AJAX_LoadMore {
             </div>
             <?php
             // Show LoadMore button if required
-            if( ( 'true' === $params['paged'] ) and ( 1 !== $params['nextpage'] ) ) :
+            if ( ( 'true' === $params['paged'] ) and ( 1 !== $params['nextpage'] ) ) {
             ?>
             <div class="loadmore-action-wrapper">
                 <div class="loadmore-spinner">
@@ -244,13 +244,13 @@ abstract class AJAX_LoadMore {
                 </div>
             </div>
             <?php
-            endif;
+            }
             ?>
             </div>
             <?php
             $output = ob_get_contents();
             ob_end_clean();
-        endif;
+        }
 
         return $output;
     }
