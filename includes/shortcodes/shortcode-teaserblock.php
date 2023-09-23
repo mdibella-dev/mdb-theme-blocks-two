@@ -73,10 +73,10 @@ function shortcode_teaserblock( $atts, $content = null ) {
     $params['paged']    = strtolower( $paged );
     $params['id']       = sprintf( 'loadmore_%1$s', random_int( 1000, 9999 ) );
 
-    if ( 'true' === $params['paged'] ) :
+    if ( 'true' === $params['paged'] ) {
         $params['show']    = get_option( 'posts_per_page' );  // always take the information from the backend.
         $params['maxpage'] = (int) ceil( $max / $params['show'] );
-    endif;
+    }
 
 
     // Get the content of the first 'page'

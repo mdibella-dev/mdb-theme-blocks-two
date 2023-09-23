@@ -29,6 +29,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 - Improve: Replace self made buttons with Gutenberg's buttons in post-terms
 - Improve: Change array notation
 - Improve: Change clamping style
+- Improve: Use WP style for control structures
 - Bugfix: Add p tag to publikationsliste to fix font issues
 
 

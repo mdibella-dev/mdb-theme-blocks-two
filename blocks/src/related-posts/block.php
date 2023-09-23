@@ -29,37 +29,35 @@ defined( 'ABSPATH' ) or exit;
 
 function render_block__related_posts( $attributes, $content, $block ) {
 
-    if ( ! isset( $block->context['postId'] ) ) :
+    if ( ! isset( $block->context['postId'] ) ) {
         return '';
-    endif;
+    }
 
 
     // Determine the categories.
     $cats    = get_the_category( $block->context['postId'] );
     $cat_ids = '';
 
-    if ( $cats ) :
-        foreach( $cats as $cat ) :
+    if ( $cats ) {
+        foreach( $cats as $cat ) {
             $cat_id_array[] = $cat->term_taxonomy_id;
-        endforeach;
+        }
 
         $cat_ids = implode( ',', $cat_id_array );
-    endif;
+    }
 
 
     // Determine the tags.
     $tags    = get_the_tags( $block->context['postId'] );
     $tag_ids = '';
 
-    if ( $tags ) :
-
-        foreach( $tags as $tag ) :
+    if ( $tags ) {
+        foreach( $tags as $tag ) {
             $tag_id_array[] = $tag->term_taxonomy_id;
-        endforeach;
+        }
 
         $tag_ids = implode( ',', $tag_id_array );
-
-    endif;
+    }
 
 
     // Populate $shortcode.
@@ -89,9 +87,9 @@ function render_block__related_posts( $attributes, $content, $block ) {
 
 function register_block__related_posts() {
 
-    if ( function_exists( 'wp_set_script_translations' ) ) :
+    if ( function_exists( 'wp_set_script_translations' ) ) {
         wp_set_script_translations( 'mdb-theme-blocks-related-posts-editor-script', 'mdb-theme-blocks', PLUGIN_DIR . 'languages/' );
-    endif;
+    }
 
     register_block_type_from_metadata(
         __DIR__,
