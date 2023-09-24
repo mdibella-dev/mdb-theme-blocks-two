@@ -41,4 +41,4 @@ function fix_translation_location( $file, $handle, $domain ) {
     return $file;
 }
 
-add_filter( 'load_script_translation_file', 'mdb_theme_blocks\fix_translation_location', 10, 3 );
+add_filter( 'load_script_translation_file', __NAMESPACE__ . '\fix_translation_location', 10, 3 );

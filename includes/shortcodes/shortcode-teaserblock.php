@@ -85,4 +85,4 @@ function shortcode_teaserblock( $atts, $content = null ) {
     return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
-add_shortcode( 'teaserblock', 'mdb_theme_blocks\shortcode_teaserblock' );
+add_shortcode( 'teaserblock', __NAMESPACE__ . '\shortcode_teaserblock' );

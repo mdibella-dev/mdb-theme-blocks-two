@@ -26,7 +26,7 @@ function plugin_init() {
     load_plugin_textdomain( 'mdb-theme-blocks', false, plugin_basename( PLUGIN_DIR ) . '/languages' );
 }
 
-add_action( 'init', 'mdb_theme_blocks\plugin_init' );
+add_action( 'init', __NAMESPACE__ . '\plugin_init' );
 
 
 
@@ -55,4 +55,4 @@ function enqueue_plugin_scripts() {
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'mdb_theme_blocks\enqueue_plugin_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_plugin_scripts', 9999 );

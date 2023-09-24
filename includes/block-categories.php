@@ -38,4 +38,4 @@ function add_block_categories( $block_categories, $block_editor_context ) {
     );
 }
 
-add_filter( 'block_categories_all', 'mdb_theme_blocks\add_block_categories', 10, 2 );
+add_filter( 'block_categories_all', __NAMESPACE__ . '\add_block_categories', 10, 2 );

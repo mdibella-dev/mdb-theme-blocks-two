@@ -30,6 +30,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 - Improve: Change array notation
 - Improve: Change clamping style
 - Improve: Use WP style for control structures
+- Improve: Use __NAMESPACE__
 - Bugfix: Add p tag to publikationsliste to fix font issues
 
 

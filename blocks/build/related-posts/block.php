@@ -94,9 +94,9 @@ function register_block__related_posts() {
     register_block_type_from_metadata(
         __DIR__,
         [
-            'render_callback' => 'mdb_theme_blocks\render_block__related_posts',
+            'render_callback' => __NAMESPACE__ . '\render_block__related_posts',
         ]
     );
 }
 
-add_action( 'init', 'mdb_theme_blocks\register_block__related_posts' );
+add_action( 'init', __NAMESPACE__ . '\register_block__related_posts' );

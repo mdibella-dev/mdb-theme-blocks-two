@@ -75,4 +75,4 @@ function shortcode_vortragsliste( $atts, $content = null ) {
     return AJAX_LoadMore::prepare_output( $params, $ajax );
 }
 
-add_shortcode( 'vortragsliste', 'mdb_theme_blocks\shortcode_vortragsliste' );
+add_shortcode( 'vortragsliste', __NAMESPACE__ . '\shortcode_vortragsliste' );

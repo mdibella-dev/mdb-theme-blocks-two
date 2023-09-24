@@ -69,7 +69,7 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore {
      */
 
     static function get_posts( $params ) {
-        
+
         $posts = get_posts( [
             'post_type'      => 'lecture',
             'post_status'    => 'publish',
@@ -107,8 +107,8 @@ class AJAX_LoadMore_Vortragsliste extends AJAX_LoadMore {
     }
 }
 
-add_action( 'wp_ajax_vortragsliste', [ 'mdb_theme_blocks\AJAX_LoadMore_Vortragsliste', 'handle_AJAX' ] );
-add_action( 'wp_ajax_nopriv_vortragsliste', [ 'mdb_theme_blocks\AJAX_LoadMore_Vortragsliste', 'handle_AJAX' ] );
+add_action( 'wp_ajax_vortragsliste', [ __NAMESPACE__ . '\AJAX_LoadMore_Vortragsliste', 'handle_AJAX' ] );
+add_action( 'wp_ajax_nopriv_vortragsliste', [ __NAMESPACE__ . '\AJAX_LoadMore_Vortragsliste', 'handle_AJAX' ] );
 
 
 AJAX_LoadMore_Vortragsliste::__constructStatic();

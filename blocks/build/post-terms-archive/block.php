@@ -61,9 +61,9 @@ function register_block__post_terms_archive() {
     register_block_type_from_metadata(
         __DIR__,
         [
-            'render_callback' => 'mdb_theme_blocks\render_block__post_terms_archive',
+            'render_callback' => __NAMESPACE__ . '\render_block__post_terms_archive',
         ]
     );
 }
 
-add_action( 'init', 'mdb_theme_blocks\register_block__post_terms_archive' );
+add_action( 'init', __NAMESPACE__ . '\register_block__post_terms_archive' );
