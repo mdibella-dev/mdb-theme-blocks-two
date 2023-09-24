@@ -71,7 +71,7 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore {
      */
 
     static function get_posts( $params ) {
-        $tax_query     = [
+        $tax_query = [
             'taxonomy' => 'publication_group',
             'terms'    => explode( ',', $params['form'] )
         ];
@@ -105,11 +105,11 @@ class AJAX_LoadMore_Publikationsliste extends AJAX_LoadMore {
 
         // Create replacement terms
         $replacements = [
-            '_PUBTITLE_'     => $part[0],
-            '_PUBCITE_'      => $part[1],
-            '_DETAILS_'      => __( 'Details', 'mdb-theme-blocks' ),
-            '_ID_'           => $post->ID,
-            '_LINK_'         => get_permalink( $post->ID ),
+            '_PUBTITLE_' => $part[0],
+            '_PUBCITE_'  => $part[1],
+            '_DETAILS_'  => __( 'Details', 'mdb-theme-blocks' ),
+            '_ID_'       => $post->ID,
+            '_LINK_'     => get_permalink( $post->ID ),
         ];
 
         return $replacements;
