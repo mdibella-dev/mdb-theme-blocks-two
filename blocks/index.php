@@ -14,8 +14,8 @@ namespace mdb_theme_blocks;
 defined( 'ABSPATH' ) or exit;
 
 
-$block_names = require( 'require-block-list.php' );
+$block_names = require 'require-block-list.php';
 
-foreach ( $block_names as $block_name ) :
+foreach ( $block_names as $block_name ) {
     require_once 'build/' . $block_name . '/block.php';
-endforeach;
+}
