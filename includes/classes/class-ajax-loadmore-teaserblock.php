@@ -101,8 +101,9 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore {
         $replacements = [
             '_CLASS_'     => implode( ' ', apply_filters( 'post_class', get_post_class( $post->ID ), '', $post->ID ) ),
             '_PERMALINK_' => get_permalink( $post->ID ),
-            '_IMAGE_'     => get_the_post_thumbnail( $post->ID, 'medium', array( 'alt' => 'XXX') ),
             '_TITLE_'     => get_the_title( $post->ID ),
+            '_IMAGE_'     => get_the_post_thumbnail( $post->ID, 'medium', [ 'alt' => get_the_title( $post->ID ) ] ),
+
         ];
 
         return $replacements;
