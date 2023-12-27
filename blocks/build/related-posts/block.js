@@ -1,1 +1,1 @@
-!function(){var e,t,o,__,w;e=window.wp.blocks,t=window.wp.i18n,o=window.wp.element,window.wp.blockEditor,__=t.__,w=o.createElement,e.registerBlockType("mdb-theme-blocks/related-posts",{edit:function(){return w("p","",__("Shows the related posts.","mdb-theme-blocks"))}})}();
+(()=>{var e,t,o,__,w;e=window.wp.blocks,t=window.wp.i18n,o=window.wp.element,window.wp.blockEditor,__=t.__,w=o.createElement,e.registerBlockType("mdb-theme-blocks/related-posts",{edit:function(){return w("p","",__("Shows the related posts.","mdb-theme-blocks"))}})})();
