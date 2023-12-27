@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mdb-theme-blocks/publication-keywords",
+  "title": "Publication Keywords",
+  "description": "Creates a list of publication keywords.",
+  "icon": "tag",
+  "category": "mdb-theme-blocks",
+  "textdomain": "mdb-theme-blocks",
+  "attributes": {},
+  "editorScript": "file:./block.js"
+}

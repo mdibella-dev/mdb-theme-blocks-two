@@ -11,4 +11,5 @@ return [
     'post-terms-archive',
     'related-posts',
     'single-publication-details',
+    'publication-keywords'
 ];
