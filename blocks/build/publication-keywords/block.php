@@ -28,27 +28,24 @@ defined( 'ABSPATH' ) or exit;
  */
 
 function render_block__publication_keywords( $attributes, $content, $block ) {
+    global $post;
 
-    if ( ! isset( $block->context['postId'] ) or ! publication\is_publication( $block->context['postId'] ) ) {
+    $terms = get_the_terms( $post->ID, 'publication_keyword' );
+
+    if ( ! $terms ) {
         return '';
     }
-
-    $data = publication\get_data( $block->context['postId'] );
-
-    if ( empty( $data['keywords'] ) ) {
-        return '';
-    }
-
 
     // Start rendering
     ob_start();
     ?>
     <p><?php
-        foreach ( $data['keywords'] as $keyword ) {
-            ?><span class="publication-keyword"><?php echo $keyword->name; ?></span><?php
+        foreach ( $terms as $term ) {
+            ?><span class="publication-keyword"><?php echo $term->name; ?></span><?php
         }
     ?></p>
     <?php
+
     // Save render result
     $output = ob_get_contents();
     ob_end_clean();

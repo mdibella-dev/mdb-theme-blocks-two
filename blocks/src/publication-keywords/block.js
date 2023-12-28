@@ -25,8 +25,11 @@ registerBlockType( metadata, {
         return (
             <div { ...blockProps }>
                 <ServerSideRender
-                    block="mdb-theme-blocks/publication-terms"
+                    block="mdb-theme-blocks/publication-keywords"
                 />
             </div>
         ) },
+    save() {
+        return null;
+    }
 } );
