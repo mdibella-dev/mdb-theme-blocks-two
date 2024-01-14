@@ -32,7 +32,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 - Improve: Change clamping style
 - Improve: Use WP style for control structures
 - Improve: Use __NAMESPACE__
-- Improve: Remove single-publication-details block
+- Improve: Remove single-publication-details block ([#7](https://github.com/mdibella-dev/mdb-theme-blocks-two/issues/7))
 - Bugfix: Add p tag to publikationsliste to fix font issues
 
 
