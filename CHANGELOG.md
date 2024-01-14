@@ -5,6 +5,20 @@ _New / Improve / Bugfix_
 <br>
 
 
+### 1.2.0
+Released: 14-01-2024
+
+- Improve: Use article title as the image's alt text in teaserblock (SEO)
+- Improve: Remove support for download-container ([#6](https://github.com/mdibella-dev/mdb-theme-blocks-two/issues/6))
+- Improve: Replace self made buttons with Gutenberg's buttons in post-terms
+- Improve: Change array notation
+- Improve: Change clamping style
+- Improve: Use WP style for control structures
+- Improve: Use __NAMESPACE__
+- Improve: Remove single-publication-details block ([#7](https://github.com/mdibella-dev/mdb-theme-blocks-two/issues/7))
+- Bugfix: Add p tag to publikationsliste to fix font issues
+
+
 ### 1.1.2
 Released: 03-03-2023
 

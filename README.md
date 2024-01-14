@@ -25,16 +25,6 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 ### Latest changes to the main branch
 
-- Improve: Use article title as the image's alt text in teaserblock (SEO)
-- Improve: Remove support for download-container ([#6](https://github.com/mdibella-dev/mdb-theme-blocks-two/issues/6))
-- Improve: Replace self made buttons with Gutenberg's buttons in post-terms
-- Improve: Change array notation
-- Improve: Change clamping style
-- Improve: Use WP style for control structures
-- Improve: Use __NAMESPACE__
-- Improve: Remove single-publication-details block ([#7](https://github.com/mdibella-dev/mdb-theme-blocks-two/issues/7))
-- Bugfix: Add p tag to publikationsliste to fix font issues
-
 
 ### Previous changes
 
