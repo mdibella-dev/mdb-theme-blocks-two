@@ -1,1 +1,0 @@
-(()=>{var e,i,o,__,t;e=window.wp.blocks,i=window.wp.i18n,o=window.wp.element,window.wp.blockEditor,__=i.__,t=o.createElement,e.registerBlockType("mdb-theme-blocks/single-publication-details",{edit:function(){return t("p","",__("Shows the details of a single publication.","mdb-theme-blocks"))}})})();
