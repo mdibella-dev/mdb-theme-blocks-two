@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="vortrag">
+<div class="vortrag fx-fade-in">
     <div class="vortrag-datetime">
         <div class="calendar">
             <span class="calendar-year">_YEAR_</span>

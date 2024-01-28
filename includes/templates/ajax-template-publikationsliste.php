@@ -6,7 +6,7 @@
  * @package mdb-theme-blocks
  */
 ?>
-<div class="publikation">
+<div class="publikation fx-fade-in">
     <div>
         <p>_NR_.</p>
     </div>
