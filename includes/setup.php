@@ -37,10 +37,12 @@ add_action( 'init', __NAMESPACE__ . '\plugin_init' );
  */
 
 function enqueue_plugin_scripts() {
+    // $filename = 'assets/build/js/ajax-loadmore.min.js',
+    $filename = 'assets/src/js/ajax-loadmore.js'; // dev pupose
 
     wp_enqueue_script(
         'ajax',
-        PLUGIN_URL . 'assets/build/js/ajax-loadmore.min.js',
+        PLUGIN_URL . $filename,
         [
             'jquery'
         ],
@@ -51,7 +53,9 @@ function enqueue_plugin_scripts() {
     wp_localize_script(
         'ajax',
         'mdb_ajax',
-        array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) )
+        [
+            'ajaxurl' => admin_url( 'admin-ajax.php' )
+        ]
     );
 }
 
