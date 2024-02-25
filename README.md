@@ -9,7 +9,7 @@ This plugin adds custom blocks to the Gutenberg editor for the use in Marco Di B
 [Marco Di Bella](https://github.com/mdibella-dev)
 
 ### Tags
-gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, ajax, custom-post-type-support
+gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, ajax, javascript, custom-post-type-support
 
 ### Requires at least
 
