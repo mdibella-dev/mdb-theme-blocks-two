@@ -43,9 +43,7 @@ function enqueue_plugin_scripts() {
     wp_enqueue_script(
         'ajax',
         PLUGIN_URL . $filename,
-        [
-            'jquery'
-        ],
+        [],
         PLUGIN_VERSION,
         true
     );
