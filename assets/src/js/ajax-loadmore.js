@@ -5,96 +5,52 @@ loadmore_buttons.forEach( loadmore_button => {
 
         e.preventDefault();
 
-        // do AJAX
+
+        // Get the correct loadmore element
+        const loadmore = document.querySelector( '#' + e.target.parentElement.dataset.parentid );
+
+
+        // Prepare the params string
+        let dataset = loadmore.dataset;
+        let params  = '';
+
+        for ( const [key, value] of Object.entries( dataset ) ) {
+
+            params += ( ( params !== '' )? '&' : '' ) + key + '=' + value;
+
+        }
+
+
+        // The AJAX handler
         const request = new XMLHttpRequest();
 
         request.onloadstart = function( e ) {
-            console.log( 'onLoadStart' );
-            //lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-button' ).hide();
-            //lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-spinner' ).show();
+
+            loadmore.querySelector( '.loadmore-action-wrapper .loadmore-button' ).style.display  = 'none';
+            loadmore.querySelector( '.loadmore-action-wrapper .loadmore-spinner' ).style.display = 'block';
+
         }
 
         request.onload = function( e ) {
-            if ( request.status == 201 ) {
-                console.log( 'onLoad' );
-                // request.responseText;
-                // lm.children( '.loadmore-content-wrapper' ).find( '.loadmore-content' ).append( jqXHR.responseText );
-                // lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-spinner' ).hide();
 
-                /*
-                nextpage = lm.data( 'nextpage' );
-                maxpage  = lm.data( 'maxpage' );
+            if ( request.status == 200 ) {
 
-                if( nextpage != maxpage ) {
-                    lm.data( 'nextpage', nextpage+1 );
-                    lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-button' ).show();
+                loadmore.querySelector( '.loadmore-content-wrapper .loadmore-content' ).innerHTML += request.responseText;
+                loadmore.querySelector( '.loadmore-action-wrapper .loadmore-spinner' ).style.display = 'none';
+
+                if( loadmore.dataset.nextpage != loadmore.dataset.maxpage ) {
+                    loadmore.dataset.nextpage = parseInt( loadmore.dataset.nextpage ) + 1;
+                    loadmore.querySelector( '.loadmore-action-wrapper .loadmore-button' ).style.display = 'block';
                 } else {
-                    lm.children( '.loadmore-action-wrapper' ).hide();
-                }*/
+                    loadmore.querySelector( '.loadmore-action-wrapper' ).style.display = 'none';
+                }
             }
         }
 
-
+        // Do the AJAX request
+        // Thx to https://stackoverflow.com/a/60534757
         request.open( 'POST', mdb_ajax.ajaxurl, true );
-        request.setRequestHeader( 'Accept', 'text/html' );
-        request.send();
+        request.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded;' );
+        request.send( params );
     } );
 } );
-
-
-
-
-
-
-
-
-
-/*
-jQuery( document ).ready( function( $ ) {
-
-    // Listen for a click event on our text input submit button
-
-    $( '.loadmore-button' ).on( 'click', function( e ) {
-        e.preventDefault();
-
-        // Detect the ID of the corresponding LoadMore-element
-
-        var lm  = $( '#' + $( this ).data( 'parentid' ) );
-
-
-        // Get the params of the LoadMore
-
-        var data = lm.data();
-
-
-        // Do the AJAX magic
-
-        $.ajax( {
-            type: 'POST',
-            url: mdb_ajax.ajaxurl,
-            data: data,
-            error: function( jqXHR, testStatus, errorThrown ) {
-                console.log( jqXHR );
-            },
-            beforeSend: function() {
-                lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-button' ).hide();
-                lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-spinner' ).show();
-            },
-            complete: function( jqXHR ) {
-                lm.children( '.loadmore-content-wrapper' ).find( '.loadmore-content' ).append( jqXHR.responseText );
-                lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-spinner' ).hide();
-
-                nextpage = lm.data( 'nextpage' );
-                maxpage  = lm.data( 'maxpage' );
-
-                if( nextpage != maxpage ) {
-                    lm.data( 'nextpage', nextpage+1 );
-                    lm.children( '.loadmore-action-wrapper' ).find( '.loadmore-button' ).show();
-                } else {
-                    lm.children( '.loadmore-action-wrapper' ).hide();
-                }
-            }
-        } );
-    } );
-} );
-*/

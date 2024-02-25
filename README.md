@@ -26,6 +26,7 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 ### Latest changes to the main branch
 
 * New: Add fading effect
+* Improve: Remove jQuery dependancy (issue #10)
 
 ### Previous changes
 

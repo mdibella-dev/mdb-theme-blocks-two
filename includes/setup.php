@@ -37,15 +37,13 @@ add_action( 'init', __NAMESPACE__ . '\plugin_init' );
  */
 
 function enqueue_plugin_scripts() {
-    // $filename = 'assets/build/js/ajax-loadmore.min.js',
-    $filename = 'assets/src/js/ajax-loadmore.js'; // dev pupose
+    $filename = 'assets/build/js/ajax-loadmore.min.js';
+    //$filename = 'assets/src/js/ajax-loadmore.js'; // dev pupose
 
     wp_enqueue_script(
         'ajax',
         PLUGIN_URL . $filename,
-        [
-            'jquery'
-        ],
+        [],
         PLUGIN_VERSION,
         true
     );
