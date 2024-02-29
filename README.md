@@ -23,11 +23,4 @@ gutenberg, block-editor, blocks, full-site-editing, translation-ready, blocks, a
 
 ## Changelog
 
-### Latest changes to the main branch
-
-* New: Add fading effect
-* Improve: Remove jQuery dependancy (issue #10)
-
-### Previous changes
-
 See [CHANGELOG.md](https://github.com/mdibella-dev/mdb-theme-blocks-two/blob/main/CHANGELOG.md).

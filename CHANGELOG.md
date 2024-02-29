@@ -4,6 +4,12 @@ _New / Improve / Bugfix_
 
 <br>
 
+### Latest changes to the main branch
+
+- New: Add fading effect
+- Improve: Remove jQuery dependancy (issue #10)
+
+<br>
 
 ### 1.2.0
 Released: 14-01-2024
