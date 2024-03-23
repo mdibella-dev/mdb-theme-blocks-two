@@ -97,12 +97,20 @@ class AJAX_LoadMore_Teaserblock extends AJAX_LoadMore {
      */
 
     static function get_replacements( $post ) {
+
+        // Get ALT-text
+        $alt = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
+
+        if ( empty( $alt ) ) {
+            $alt = get_the_title( $post->ID );
+        }
+
         // Create replacement terms
         $replacements = [
             '_CLASS_'     => implode( ' ', apply_filters( 'post_class', get_post_class( $post->ID ), '', $post->ID ) ),
             '_PERMALINK_' => get_permalink( $post->ID ),
             '_TITLE_'     => get_the_title( $post->ID ),
-            '_IMAGE_'     => get_the_post_thumbnail( $post->ID, 'medium', [ 'alt' => get_the_title( $post->ID ) ] ),
+            '_IMAGE_'     => get_the_post_thumbnail( $post->ID, 'medium', [ 'alt' => $alt ] ),
 
         ];
 

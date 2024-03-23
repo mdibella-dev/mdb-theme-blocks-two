@@ -7,6 +7,7 @@ _New / Improve / Bugfix_
 ### Latest changes to the main branch
 
 - New: Add fading effect
+- Improve: Better ALT-text on teaser images
 - Improve: Remove jQuery dependancy (issue #10)
 
 <br>
