@@ -47,7 +47,7 @@ function render_block__post_terms( $attributes, $content, $block ) {
             <a class="wp-block-button__link wp-element-button"
                href="<?php echo get_tag_link( $tag->term_id ); ?>"
                rel="tag"
-               target="_self"><?php echo trim($tag->name); ?></a>
+               target="_self"><?php echo trim( $tag->name ); ?></a>
         </div>
         <?php
         }

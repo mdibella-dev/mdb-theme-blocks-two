@@ -30,20 +30,29 @@ defined( 'ABSPATH' ) or exit;
 function render_block__publication_keywords( $attributes, $content, $block ) {
     global $post;
 
-    $terms = get_the_terms( $post->ID, 'publication_keyword' );
+    $tags = get_the_terms( $post->ID, 'publication_keyword' );
 
-    if ( ! $terms ) {
+    if ( ! $tags ) {
         return '';
     }
 
     // Start rendering
     ob_start();
     ?>
-    <p><?php
-        foreach ( $terms as $term ) {
-            ?><span class="publication-keyword"><?php echo $term->name; ?></span><?php
+    <div class="wp-block-buttons is-layout-flex tags " aria-hidden="true">
+        <?php
+        foreach ( $tags as $tag ) {
+        ?>
+        <div class="wp-block-button is-style-default">
+            <a class="wp-block-button__link wp-element-button"
+               href="<?php echo get_tag_link( $tag->term_id ); ?>"
+               rel="tag"
+               target="_self"><?php echo trim( $tag->name ); ?></a>
+        </div>
+        <?php
         }
-    ?></p>
+        ?>
+    </div>
     <?php
 
     // Save render result
