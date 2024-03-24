@@ -9,6 +9,7 @@ _New / Improve / Bugfix_
 - New: Add fading effect
 - Improve: Better ALT-text on teaser images
 - Improve: Remove jQuery dependancy (issue #10)
+- Improve: Add new render function for publication_keywords
 
 <br>
 

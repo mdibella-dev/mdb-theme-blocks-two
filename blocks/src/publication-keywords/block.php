@@ -39,7 +39,7 @@ function render_block__publication_keywords( $attributes, $content, $block ) {
     // Start rendering
     ob_start();
     ?>
-    <div class="wp-block-buttons is-layout-flex tags " aria-hidden="true">
+    <div class="wp-block-buttons is-layout-flex tags publication" aria-hidden="true">
         <?php
         foreach ( $tags as $tag ) {
         ?>
