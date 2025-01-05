@@ -6,11 +6,17 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
+
+<br>
+
+### 1.2.1
+Released: 05-01-2025
+
 - New: Add fading effect
 - Improve: Better ALT-text on teaser images
 - Improve: Remove jQuery dependancy (issue #10)
+- Improve: Add styling to vortragsliste
 
-<br>
 
 ### 1.2.0
 Released: 14-01-2024

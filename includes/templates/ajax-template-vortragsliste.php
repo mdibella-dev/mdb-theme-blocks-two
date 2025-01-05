@@ -16,6 +16,6 @@
     </div>
     <div class="vortrag-description">
         <p>Vortrag "_TITLE_" in _LOCATION_.</p>
-        <p class="small">_DESCRIPTION_.</p>
+        <p style="margin-top: .5em;font-size: 90%;color: var(--wp--preset--color--contrast-2);">_DESCRIPTION_.</p>
     </div>
 </div>
